@@ -2,4 +2,22 @@
 @import "compass/css3";
 @import "compass/typography/links/unstyled-link";
 
+body{
+	font-size:12px;
+	background-color:rgb(192,192,192);
+}
+
 $content-width:960px;
+
+@mixin content{
+	width:$content-width;
+	margin:0 auto;
+}
+
+.content{
+	@include content;
+	padding-top:10px;
+	background-color:#fff;
+	@include border-corner-radius(top, left, 5px);
+	@include border-corner-radius(top, right, 5px);
+}
