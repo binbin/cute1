@@ -16,8 +16,13 @@ $content-width:960px;
 
 .content{
 	@include content;
+	margin:{
+      top:20px;
+      bottom:20px;
+    }
 	padding-top:10px;
 	background-color:#fff;
 	@include border-corner-radius(top, left, 5px);
 	@include border-corner-radius(top, right, 5px);
+	min-height:900px;
 }

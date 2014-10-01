@@ -73,6 +73,8 @@ body {
 .content {
   width: 960px;
   margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
   padding-top: 10px;
   background-color: #fff;
   -moz-border-radius-topleft: 5px;
@@ -81,4 +83,5 @@ body {
   -moz-border-radius-topright: 5px;
   -webkit-border-top-right-radius: 5px;
   border-top-right-radius: 5px;
+  min-height: 900px;
 }
