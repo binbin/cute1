@@ -3,3 +3,12 @@
  * <!--[if IE]>
  *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
  * <![endif]--> */
+/* line 9, ../sass/ie.scss */
+.content .navbar .nav a {
+  width: 76px;
+  height: 22px;
+}
+/* line 13, ../sass/ie.scss */
+.content .navbar .nav a.current, .content .navbar .nav a:hover {
+  background: url("../images/bg-nav1.png") no-repeat scroll 0 0 transparent;
+}

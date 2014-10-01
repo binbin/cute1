@@ -89,7 +89,7 @@ body {
 .content .navbar {
   width: 100%;
   height: 39px;
-  background: url("../images/bg-nav.png") repeat scroll 0 0 transparent;
+  background: url("../images/bg-nav.png") no-repeat scroll 0 0 transparent;
   position: relative;
 }
 /* line 33, ../sass/main.scss */
@@ -101,9 +101,50 @@ body {
   *zoom: 1;
   *display: inline;
   cursor: pointer;
-  background: url("../images/logo.png") repeat scroll 0 0 transparent;
+  background: url("../images/logo.png") no-repeat scroll 0 0 transparent;
   width: 104px;
   height: 100px;
   top: -3px;
   left: 0;
+}
+/* line 43, ../sass/main.scss */
+.content .navbar .nav {
+  color: #fff;
+  margin-left: 118px;
+  font-size: 15px;
+  padding-top: 2px;
+}
+/* line 49, ../sass/main.scss */
+.content .navbar .nav a {
+  color: #000;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  text-decoration: none;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  margin-left: 7px;
+  margin-right: 7px;
+}
+/* line 65, ../sass/main.scss */
+.content .navbar .nav span.sword {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  padding-top: 3px;
+}
+/* line 71, ../sass/main.scss */
+.content .navbar .nav a.current, .content .navbar .nav a:hover {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  background: #084086;
+  color: #fff;
 }
