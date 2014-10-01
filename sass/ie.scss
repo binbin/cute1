@@ -9,8 +9,12 @@
     a{
         width:76px;
         height:22px;
+        padding:0;
     }
 	a.current,a:hover{
         background:url("../images/bg-nav1.png") no-repeat scroll 0 0 transparent;
      }
+    span.sword{
+     padding:0;
+    }
 }
