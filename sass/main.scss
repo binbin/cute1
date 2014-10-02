@@ -82,6 +82,9 @@ $content-width:960px;
 .gird-top10{
   padding-top:10px;
 }
+.panel-top20{
+  margin-top:20px;
+}
 
 .panel{
   padding-top:9px;
@@ -368,6 +371,10 @@ $content-width:960px;
      width:200px;
      height:96px;
      background:url("../images/bg-tagal.png") no-repeat scroll 0 0 transparent;
+    }
+    .tagal_title{
+      font-size:15px;
+      line-height: 30px;
     }
   }
 }
