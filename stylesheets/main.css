@@ -686,3 +686,14 @@ body {
 .content .ad5 .artical_listbox li a {
   width: 340px;
 }
+/* line 362, ../sass/main.scss */
+.content .ad6 {
+  padding-top: 14px;
+  padding-left: 40px;
+}
+/* line 367, ../sass/main.scss */
+.content .ad6 .tagal {
+  width: 200px;
+  height: 96px;
+  background: url("../images/bg-tagal.png") no-repeat scroll 0 0 transparent;
+}
