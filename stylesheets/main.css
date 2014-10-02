@@ -514,7 +514,6 @@ body {
   margin: 0 auto;
   position: relative;
   margin-top: 20px;
-  margin-bottom: 20px;
   padding-top: 10px;
   background-color: #fff;
   -moz-border-radius-topleft: 5px;
@@ -525,14 +524,14 @@ body {
   border-top-right-radius: 5px;
   min-height: 900px;
 }
-/* line 223, ../sass/main.scss */
+/* line 222, ../sass/main.scss */
 .content .navbar {
   width: 100%;
   height: 39px;
   background: url("../images/bg-nav.png") no-repeat scroll 0 0 transparent;
   position: relative;
 }
-/* line 228, ../sass/main.scss */
+/* line 227, ../sass/main.scss */
 .content .navbar .logo {
   position: absolute;
   display: inline-block;
@@ -547,14 +546,14 @@ body {
   top: -3px;
   left: 0;
 }
-/* line 238, ../sass/main.scss */
+/* line 237, ../sass/main.scss */
 .content .navbar .nav {
   color: #fff;
   margin-left: 118px;
   font-size: 15px;
   padding-top: 4px;
 }
-/* line 244, ../sass/main.scss */
+/* line 243, ../sass/main.scss */
 .content .navbar .nav a {
   color: #000;
   display: inline-block;
@@ -571,7 +570,7 @@ body {
   margin-left: 7px;
   margin-right: 7px;
 }
-/* line 260, ../sass/main.scss */
+/* line 259, ../sass/main.scss */
 .content .navbar .nav span.sword {
   display: inline-block;
   vertical-align: middle;
@@ -582,7 +581,7 @@ body {
     top:3px;
    }*/
 }
-/* line 266, ../sass/main.scss */
+/* line 265, ../sass/main.scss */
 .content .navbar .nav a.current, .content .navbar .nav a:hover {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -590,13 +589,13 @@ body {
   background: #084086;
   color: #fff;
 }
-/* line 272, ../sass/main.scss */
+/* line 271, ../sass/main.scss */
 .content .navbar .nav .searchbox {
   float: right;
   margin-right: 18px;
   margin-top: -2px;
 }
-/* line 276, ../sass/main.scss */
+/* line 275, ../sass/main.scss */
 .content .navbar .nav .searchbox input {
   border: none;
   background: url("../images/bg-searchbox.png") no-repeat scroll 0 0 transparent;
@@ -605,7 +604,7 @@ body {
   padding-left: 12px;
   float: left;
 }
-/* line 284, ../sass/main.scss */
+/* line 283, ../sass/main.scss */
 .content .navbar .nav .searchbox .searchbtn {
   width: 28px;
   height: 26px;
@@ -614,41 +613,41 @@ body {
   float: left;
   cursor: pointer;
 }
-/* line 295, ../sass/main.scss */
+/* line 294, ../sass/main.scss */
 .content .navbar2 {
   font-size: 14px;
   font-weight: bold;
   overflow: hidden;
   width: 100%;
 }
-/* line 301, ../sass/main.scss */
+/* line 300, ../sass/main.scss */
 .content .navbar2 .nav2 {
   float: right;
   padding-top: 7px;
   padding-bottom: 7px;
   padding-right: 20px;
 }
-/* line 308, ../sass/main.scss */
+/* line 307, ../sass/main.scss */
 .content .navbar2 .nav2 a {
   margin-left: 7px;
   margin-right: 7px;
   text-decoration: none;
   color: #b8b8b8;
 }
-/* line 316, ../sass/main.scss */
+/* line 315, ../sass/main.scss */
 .content .navbar2 .nav2 a:hover, .content .navbar2 .nav2 a.current {
   text-decoration: underline;
   color: #f4b613;
 }
-/* line 322, ../sass/main.scss */
+/* line 321, ../sass/main.scss */
 .content .ad1 {
   width: 100%;
 }
-/* line 326, ../sass/main.scss */
+/* line 325, ../sass/main.scss */
 .content .ad2 {
   padding-left: 10px;
 }
-/* line 330, ../sass/main.scss */
+/* line 329, ../sass/main.scss */
 .content .ad3 li {
   display: inline-block;
   vertical-align: middle;
@@ -656,26 +655,26 @@ body {
   *zoom: 1;
   *display: inline;
 }
-/* line 333, ../sass/main.scss */
+/* line 332, ../sass/main.scss */
 .content .ad3 .fix_ad3_right {
   padding-right: 3px;
 }
-/* line 337, ../sass/main.scss */
+/* line 336, ../sass/main.scss */
 .content .ad4 {
   padding-left: 10px;
 }
-/* line 341, ../sass/main.scss */
+/* line 340, ../sass/main.scss */
 .content .ad4 .search_box input {
   padding: 1px 0px;
   border: 1px solid #999;
   width: 160px;
 }
-/* line 347, ../sass/main.scss */
+/* line 346, ../sass/main.scss */
 .content .ad4 .search_btn {
   padding-top: 16px;
   padding-bottom: 30px;
 }
-/* line 352, ../sass/main.scss */
+/* line 351, ../sass/main.scss */
 .content .ad4 .search_btn button {
   border: none;
   background: url("../images/bg-searchbtn1.png") no-repeat scroll 0 0 transparent;
@@ -683,27 +682,76 @@ body {
   height: 26px;
   cursor: pointer;
 }
-/* line 361, ../sass/main.scss */
+/* line 360, ../sass/main.scss */
 .content .ad5 {
   width: 450px;
 }
-/* line 363, ../sass/main.scss */
+/* line 362, ../sass/main.scss */
 .content .ad5 .artical_listbox li a {
   width: 340px;
 }
-/* line 365, ../sass/main.scss */
+/* line 364, ../sass/main.scss */
 .content .ad6 {
   padding-top: 14px;
   padding-left: 40px;
 }
-/* line 370, ../sass/main.scss */
+/* line 369, ../sass/main.scss */
 .content .ad6 .tagal {
   width: 200px;
   height: 96px;
   background: url("../images/bg-tagal.png") no-repeat scroll 0 0 transparent;
 }
-/* line 375, ../sass/main.scss */
+/* line 374, ../sass/main.scss */
 .content .ad6 .tagal_title {
   font-size: 15px;
   line-height: 30px;
+}
+
+/* line 380, ../sass/main.scss */
+.footer {
+  width: 960px;
+  padding-top: 18px;
+  background: url("../images/bg-footer.png") no-repeat scroll 0 0 #fff;
+  margin: 0 auto;
+}
+/* line 385, ../sass/main.scss */
+.footer a {
+  color: #10387e;
+  text-decoration: none;
+}
+/* line 389, ../sass/main.scss */
+.footer a:hover {
+  text-decoration: underline;
+  color: #f4b613;
+}
+/* line 393, ../sass/main.scss */
+.footer .footer-info {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  width: 450px;
+}
+/* line 397, ../sass/main.scss */
+.footer .footer-info-link {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/* line 403, ../sass/main.scss */
+.footer .footer-info-icp {
+  padding-bottom: 10px;
+}
+/* line 408, ../sass/main.scss */
+.footer div.brand {
+  float: right;
+  background: url("../images/bg-brand.png") no-repeat scroll 0 0 #fff;
+  height: 37px;
+  width: 112px;
+  margin-right: 18px;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
 }

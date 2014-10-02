@@ -213,7 +213,6 @@ $content-width:960px;
 	@include content;
 	margin:{
       top:20px;
-      bottom:20px;
     }
 	padding-top:10px;
 	background-color:#fff;
@@ -377,4 +376,41 @@ $content-width:960px;
       line-height: 30px;
     }
   }
+}
+.footer{
+   width:960px;
+   padding-top:18px;
+   background:url("../images/bg-footer.png") no-repeat scroll 0 0 #fff;
+   margin: 0 auto;
+   a{
+        color:rgb(16,56,126);
+        text-decoration:none;
+    }
+   a:hover{
+        text-decoration: underline;
+        color:rgb(244,182,19);
+    }
+   .footer-info{
+    @include inline-block;
+    width:450px;
+   }
+   .footer-info-link{
+      padding:{
+       top:10px;
+       bottom:10px;
+      }
+   }
+   .footer-info-icp{
+      padding:{
+        bottom:10px;
+      }
+   }
+   div.brand{
+     float:right;
+     background:url("../images/bg-brand.png") no-repeat scroll 0 0 #fff;
+     height:37px;
+     width:112px;
+     margin-right:18px;
+     @include inline-block;
+   }
 }
