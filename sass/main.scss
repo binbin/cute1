@@ -151,6 +151,60 @@ $content-width:960px;
   background:url("../images/bg-panel208.png") no-repeat scroll 0 0 transparent;
   width:208px;
 }
+.newsbox{
+  .newsbox-title{
+     font-size:15px;
+     font-weight:bold;
+     /*padding-left:7px;*/
+     padding:{
+      /*top:10px;*/
+      bottom:5px;
+     }
+     border-bottom:1px solid rgb(195,195,195);
+     .more{
+        @include inline-block;
+        float:right;
+        font-size:12px;
+        color:rgb(148,203,85);
+        font-weight: normal;
+        text-decoration: none;
+        /*margin-right: 20px;*/
+        margin-top: 4px;
+     }
+     .more:hover{
+          text-decoration: underline;
+          color:rgb(244,182,19);
+       }
+  }
+  .artical_listbox{
+     padding:{
+      top:15px;
+      bottom:5px;
+      left:8px;
+     }
+     li{
+       padding:{
+         /*top:5px;*/
+         bottom:10px;
+         left:23px;
+       }
+       background:url("../images/bg-linklistitem.png") no-repeat scroll 0 0 transparent;
+       a{
+         @include inline-block;
+         color:rgb(16,56,126);
+         text-decoration: none; 
+       }
+       a:hover{
+          text-decoration: underline;
+          color:rgb(244,182,19);
+       }
+       .date{
+         float:right;
+         color:rgb(170,170,170);
+       }
+     }
+  }
+}
 
 .content{
 	@include content;
@@ -300,5 +354,9 @@ $content-width:960px;
        cursor:pointer;
      }
     }
+  }
+  .ad5{
+     width:450px;
+     .artical_listbox li a{width:340px;}
   }
 }
