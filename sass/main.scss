@@ -113,6 +113,14 @@ $content-width:960px;
   background:url("../images/bg-panel413.png") no-repeat scroll 0 0 transparent;
   width:413px;
 }
+.panel177{
+  background:url("../images/bg-panel177.png") no-repeat scroll 0 0 transparent;
+  width:177px;
+}
+.panel208{
+  background:url("../images/bg-panel208.png") no-repeat scroll 0 0 transparent;
+  width:208px;
+}
 
 .content{
 	@include content;
@@ -235,8 +243,11 @@ $content-width:960px;
    li{
      @include inline-block;
    }
-   .fix_right{
-    padding-right:5px;
+   .fix_ad3_right{
+    padding-right:3px;
    }
+  }
+  .ad4{
+    padding-left:10px;
   }
 }
