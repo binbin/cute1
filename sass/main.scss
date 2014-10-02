@@ -8,6 +8,8 @@
 
 body{
 	font-size:12px;
+  /*font-family: cursive;*/
+  font-family: Arial;
 	background-color:rgb(192,192,192);
 }
 
@@ -101,4 +103,31 @@ $content-width:960px;
         }
 	  }
 	}
+  .navbar2{
+      font-size:14px;
+      font-weight:bold;
+      $space:7px;
+      overflow: hidden;
+      width: 100%;
+      .nav2{
+       float:right;
+       padding:{
+        top:$space;
+        bottom:$space;
+        right:20px;
+       }
+       a{
+          margin:{
+            left:$space;
+            right:$space;
+          }
+          text-decoration: none;
+          color:rgb(184,184,184);
+       }
+       a:hover,a.current{
+          text-decoration: underline;
+          color:rgb(244,182,19);
+       }
+      }
+    }
 }
