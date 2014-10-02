@@ -102,11 +102,41 @@ $content-width:960px;
       text-decoration: none;
       margin-right: 20px;
      }
+     .more:hover{
+          text-decoration: underline;
+          color:rgb(244,182,19);
+       }
   }
   .content-text{
     line-height:20px;
     word-wrap: break-word;
     word-break: break-all;
+  }
+  .linklistbox{
+     background:rgb(245,245,245);
+     border:1px solid rgb(233,233,233);
+     @include border-radius(3px);
+     padding:{
+      top:5px;
+      bottom:5px;
+      left:8px;
+     }
+     li{
+       padding:{
+         top:5px;
+         bottom:5px;
+       }
+       a{
+         background:url("../images/bg-linklistitem.png") no-repeat scroll 0 0 transparent;
+         padding-left:23px;
+         color:rgb(16,56,126);
+         text-decoration: none; 
+       }
+       a:hover{
+          text-decoration: underline;
+          color:rgb(244,182,19);
+       }
+     }
   }
 }
 .panel413{
@@ -249,5 +279,26 @@ $content-width:960px;
   }
   .ad4{
     padding-left:10px;
+    .search_box{
+
+      input{
+        padding: 1px 0px;
+        border: 1px solid #999;
+        width:160px;
+      }
+    }
+    .search_btn{
+     padding:{
+      top:16px;
+      bottom:30px;
+     }
+     button{
+       border:none;
+       background:url("../images/bg-searchbtn1.png") no-repeat scroll 0 0 transparent;
+       width:122px;
+       height:26px;
+       cursor:pointer;
+     }
+    }
   }
 }
