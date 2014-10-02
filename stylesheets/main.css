@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* line 5, c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -76,10 +77,272 @@ body {
   background-color: silver;
 }
 
-/* line 23, ../sass/main.scss */
+/* 鏍呮牸鍖栧竷灞€鏍峰紡 */
+/* line 25, ../sass/main.scss */
+.wrap {
+  width: 952px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* line 26, ../sass/main.scss */
+.grid {
+  margin-right: 8px;
+  float: left;
+  display: inline-block;
+}
+
+/* line 27, ../sass/main.scss */
+.grid.grid-fixed {
+  margin-right: 0;
+}
+
+/* line 28, ../sass/main.scss */
+.grid-1 {
+  width: 12px;
+}
+
+/* line 29, ../sass/main.scss */
+.grid-2 {
+  width: 32px;
+}
+
+/* line 30, ../sass/main.scss */
+.grid-3 {
+  width: 52px;
+}
+
+/* line 31, ../sass/main.scss */
+.grid-4 {
+  width: 72px;
+}
+
+/* line 32, ../sass/main.scss */
+.grid-5 {
+  width: 92px;
+}
+
+/* line 33, ../sass/main.scss */
+.grid-6 {
+  width: 112px;
+}
+
+/* line 34, ../sass/main.scss */
+.grid-7 {
+  width: 132px;
+}
+
+/* line 35, ../sass/main.scss */
+.grid-8 {
+  width: 152px;
+}
+
+/* line 36, ../sass/main.scss */
+.grid-9 {
+  width: 172px;
+}
+
+/* line 37, ../sass/main.scss */
+.grid-10 {
+  width: 192px;
+}
+
+/* line 38, ../sass/main.scss */
+.grid-11 {
+  width: 212px;
+}
+
+/* line 39, ../sass/main.scss */
+.grid-12 {
+  width: 232px;
+}
+
+/* line 40, ../sass/main.scss */
+.grid-13 {
+  width: 252px;
+}
+
+/* line 41, ../sass/main.scss */
+.grid-14 {
+  width: 272px;
+}
+
+/* line 42, ../sass/main.scss */
+.grid-15 {
+  width: 292px;
+}
+
+/* line 43, ../sass/main.scss */
+.grid-16 {
+  width: 312px;
+}
+
+/* line 44, ../sass/main.scss */
+.grid-17 {
+  width: 332px;
+}
+
+/* line 45, ../sass/main.scss */
+.grid-18 {
+  width: 352px;
+}
+
+/* line 46, ../sass/main.scss */
+.grid-19 {
+  width: 372px;
+}
+
+/* line 47, ../sass/main.scss */
+.grid-20 {
+  width: 392px;
+}
+
+/* line 48, ../sass/main.scss */
+.grid-21 {
+  width: 412px;
+}
+
+/* line 49, ../sass/main.scss */
+.grid-22 {
+  width: 432px;
+}
+
+/* line 50, ../sass/main.scss */
+.grid-23 {
+  width: 452px;
+}
+
+/* line 51, ../sass/main.scss */
+.grid-24 {
+  width: 472px;
+}
+
+/* line 52, ../sass/main.scss */
+.grid-25 {
+  width: 492px;
+}
+
+/* line 53, ../sass/main.scss */
+.grid-26 {
+  width: 512px;
+}
+
+/* line 54, ../sass/main.scss */
+.grid-27 {
+  width: 532px;
+}
+
+/* line 55, ../sass/main.scss */
+.grid-28 {
+  width: 552px;
+}
+
+/* line 56, ../sass/main.scss */
+.grid-29 {
+  width: 572px;
+}
+
+/* line 57, ../sass/main.scss */
+.grid-30 {
+  width: 592px;
+}
+
+/* line 58, ../sass/main.scss */
+.grid-31 {
+  width: 612px;
+}
+
+/* line 59, ../sass/main.scss */
+.grid-32 {
+  width: 632px;
+}
+
+/* line 60, ../sass/main.scss */
+.grid-33 {
+  width: 652px;
+}
+
+/* line 61, ../sass/main.scss */
+.grid-34 {
+  width: 672px;
+}
+
+/* line 62, ../sass/main.scss */
+.grid-35 {
+  width: 692px;
+}
+
+/* line 63, ../sass/main.scss */
+.grid-36 {
+  width: 712px;
+}
+
+/* line 64, ../sass/main.scss */
+.grid-37 {
+  width: 732px;
+}
+
+/* line 65, ../sass/main.scss */
+.grid-38 {
+  width: 752px;
+}
+
+/* line 66, ../sass/main.scss */
+.grid-39 {
+  width: 772px;
+}
+
+/* line 67, ../sass/main.scss */
+.grid-40 {
+  width: 792px;
+}
+
+/* line 68, ../sass/main.scss */
+.grid-41 {
+  width: 812px;
+}
+
+/* line 69, ../sass/main.scss */
+.grid-42 {
+  width: 832px;
+}
+
+/* line 70, ../sass/main.scss */
+.grid-43 {
+  width: 852px;
+}
+
+/* line 71, ../sass/main.scss */
+.grid-44 {
+  width: 872px;
+}
+
+/* line 72, ../sass/main.scss */
+.grid-45 {
+  width: 892px;
+}
+
+/* line 73, ../sass/main.scss */
+.grid-46 {
+  width: 912px;
+}
+
+/* line 74, ../sass/main.scss */
+.grid-47 {
+  width: 932px;
+}
+
+/* line 75, ../sass/main.scss */
+.grid-48 {
+  width: 952px;
+}
+
+/* End 鏍呮牸鍖栧竷灞€鏍峰紡 */
+/* line 78, ../sass/main.scss */
 .content {
   width: 960px;
   margin: 0 auto;
+  position: relative;
   margin-top: 20px;
   margin-bottom: 20px;
   padding-top: 10px;
@@ -92,14 +355,14 @@ body {
   border-top-right-radius: 5px;
   min-height: 900px;
 }
-/* line 34, ../sass/main.scss */
+/* line 89, ../sass/main.scss */
 .content .navbar {
   width: 100%;
   height: 39px;
   background: url("../images/bg-nav.png") no-repeat scroll 0 0 transparent;
   position: relative;
 }
-/* line 39, ../sass/main.scss */
+/* line 94, ../sass/main.scss */
 .content .navbar .logo {
   position: absolute;
   display: inline-block;
@@ -114,14 +377,14 @@ body {
   top: -3px;
   left: 0;
 }
-/* line 49, ../sass/main.scss */
+/* line 104, ../sass/main.scss */
 .content .navbar .nav {
   color: #fff;
   margin-left: 118px;
   font-size: 15px;
   padding-top: 4px;
 }
-/* line 55, ../sass/main.scss */
+/* line 110, ../sass/main.scss */
 .content .navbar .nav a {
   color: #000;
   display: inline-block;
@@ -138,7 +401,7 @@ body {
   margin-left: 7px;
   margin-right: 7px;
 }
-/* line 71, ../sass/main.scss */
+/* line 126, ../sass/main.scss */
 .content .navbar .nav span.sword {
   display: inline-block;
   vertical-align: middle;
@@ -147,7 +410,7 @@ body {
   *display: inline;
   padding-top: 3px;
 }
-/* line 77, ../sass/main.scss */
+/* line 132, ../sass/main.scss */
 .content .navbar .nav a.current, .content .navbar .nav a:hover {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -155,13 +418,13 @@ body {
   background: #084086;
   color: #fff;
 }
-/* line 83, ../sass/main.scss */
+/* line 138, ../sass/main.scss */
 .content .navbar .nav .searchbox {
   float: right;
   margin-right: 18px;
   margin-top: -2px;
 }
-/* line 87, ../sass/main.scss */
+/* line 142, ../sass/main.scss */
 .content .navbar .nav .searchbox input {
   border: none;
   background: url("../images/bg-searchbox.png") no-repeat scroll 0 0 transparent;
@@ -170,7 +433,7 @@ body {
   padding-left: 12px;
   float: left;
 }
-/* line 95, ../sass/main.scss */
+/* line 150, ../sass/main.scss */
 .content .navbar .nav .searchbox .searchbtn {
   width: 28px;
   height: 26px;
@@ -179,29 +442,33 @@ body {
   float: left;
   cursor: pointer;
 }
-/* line 106, ../sass/main.scss */
+/* line 161, ../sass/main.scss */
 .content .navbar2 {
   font-size: 14px;
   font-weight: bold;
   overflow: hidden;
   width: 100%;
 }
-/* line 112, ../sass/main.scss */
+/* line 167, ../sass/main.scss */
 .content .navbar2 .nav2 {
   float: right;
   padding-top: 7px;
   padding-bottom: 7px;
   padding-right: 20px;
 }
-/* line 119, ../sass/main.scss */
+/* line 174, ../sass/main.scss */
 .content .navbar2 .nav2 a {
   margin-left: 7px;
   margin-right: 7px;
   text-decoration: none;
   color: #b8b8b8;
 }
-/* line 127, ../sass/main.scss */
+/* line 182, ../sass/main.scss */
 .content .navbar2 .nav2 a:hover, .content .navbar2 .nav2 a.current {
   text-decoration: underline;
   color: #f4b613;
+}
+/* line 188, ../sass/main.scss */
+.content .ad1 {
+  width: 100%;
 }
