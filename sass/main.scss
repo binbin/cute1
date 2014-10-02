@@ -1,6 +1,10 @@
 @import "compass/reset";
 @import "compass/css3";
 @import "compass/typography/links/unstyled-link";
+/*@import "compass/utilities/general/clearfix";*/
+
+.clear{clear:both;height:0px;overflow:hidden;}
+
 
 *:focus {
     outline: 0;
@@ -74,6 +78,41 @@ $content-width:960px;
 .grid-47 { width:932px; }
 .grid-48 { width:952px; }
 /* End 栅格化布局样式 */
+.grid520{width:520px;}
+.gird-top10{
+  padding-top:10px;
+}
+
+.panel{
+  padding-top:9px;
+  .panel-title{
+     font-size:15px;
+     font-weight:bold;
+     padding-left:7px;
+     padding:{
+      top:10px;
+      bottom:10px;
+     }
+     .more{
+      @include inline-block;
+      float:right;
+      font-size:12px;
+      color:rgb(148,203,85);
+      font-weight: normal;
+      text-decoration: none;
+      margin-right: 20px;
+     }
+  }
+  .content-text{
+    line-height:20px;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+}
+.panel413{
+  background:url("../images/bg-panel413.png") no-repeat scroll 0 0 transparent;
+  width:413px;
+}
 
 .content{
 	@include content;
@@ -125,9 +164,9 @@ $content-width:960px;
         }
         span.sword{
           @include inline-block;
-          padding:{
+         /* padding:{
            top:3px;
-          }
+          }*/
         }
         a.current,a:hover{
           @include border-radius(3px);
@@ -188,5 +227,16 @@ $content-width:960px;
   .ad1{
    width:100%
 
+  }
+  .ad2{
+   padding-left:10px;
+  }
+  .ad3{
+   li{
+     @include inline-block;
+   }
+   .fix_right{
+    padding-right:5px;
+   }
   }
 }
