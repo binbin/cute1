@@ -8,7 +8,8 @@
 .content .navbar .nav{
     a{
         width:76px;
-        height:22px;
+        height:24px;
+        line-height:24px;
         padding:0;
     }
 	a.current,a:hover{
@@ -16,5 +17,7 @@
      }
     span.sword{
      padding:0;
+     height:24px;
+     line-height:24px;
     }
 }

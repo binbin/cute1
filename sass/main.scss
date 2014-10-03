@@ -245,19 +245,21 @@ $content-width:960px;
           @include inline-block;
           text-decoration: none;
           padding:{
-           top:5px;
            left:5px;
            right:5px;
-           bottom:5px;
           }
           text-align: center;
           margin:{
            left:$space;
            right:$space;
           }
+          height:24px;
+          line-height:24px;
         }
         span.sword{
           @include inline-block;
+          height:24px;
+          line-height:24px;
          /* padding:{
            top:3px;
           }*/

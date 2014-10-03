@@ -562,13 +562,13 @@ body {
   *zoom: 1;
   *display: inline;
   text-decoration: none;
-  padding-top: 5px;
   padding-left: 5px;
   padding-right: 5px;
-  padding-bottom: 5px;
   text-align: center;
   margin-left: 7px;
   margin-right: 7px;
+  height: 24px;
+  line-height: 24px;
 }
 /* line 259, ../sass/main.scss */
 .content .navbar .nav span.sword {
@@ -577,11 +577,13 @@ body {
   *vertical-align: auto;
   *zoom: 1;
   *display: inline;
+  height: 24px;
+  line-height: 24px;
   /* padding:{
     top:3px;
    }*/
 }
-/* line 265, ../sass/main.scss */
+/* line 267, ../sass/main.scss */
 .content .navbar .nav a.current, .content .navbar .nav a:hover {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -589,13 +591,13 @@ body {
   background: #084086;
   color: #fff;
 }
-/* line 271, ../sass/main.scss */
+/* line 273, ../sass/main.scss */
 .content .navbar .nav .searchbox {
   float: right;
   margin-right: 18px;
   margin-top: -2px;
 }
-/* line 275, ../sass/main.scss */
+/* line 277, ../sass/main.scss */
 .content .navbar .nav .searchbox input {
   border: none;
   background: url("../images/bg-searchbox.png") no-repeat scroll 0 0 transparent;
@@ -605,7 +607,7 @@ body {
   padding-left: 12px;
   float: left;
 }
-/* line 284, ../sass/main.scss */
+/* line 286, ../sass/main.scss */
 .content .navbar .nav .searchbox .searchbtn {
   width: 28px;
   height: 26px;
@@ -614,41 +616,41 @@ body {
   float: left;
   cursor: pointer;
 }
-/* line 295, ../sass/main.scss */
+/* line 297, ../sass/main.scss */
 .content .navbar2 {
   font-size: 14px;
   font-weight: bold;
   overflow: hidden;
   width: 100%;
 }
-/* line 301, ../sass/main.scss */
+/* line 303, ../sass/main.scss */
 .content .navbar2 .nav2 {
   float: right;
   padding-top: 7px;
   padding-bottom: 7px;
   padding-right: 20px;
 }
-/* line 308, ../sass/main.scss */
+/* line 310, ../sass/main.scss */
 .content .navbar2 .nav2 a {
   margin-left: 7px;
   margin-right: 7px;
   text-decoration: none;
   color: #b8b8b8;
 }
-/* line 316, ../sass/main.scss */
+/* line 318, ../sass/main.scss */
 .content .navbar2 .nav2 a:hover, .content .navbar2 .nav2 a.current {
   text-decoration: underline;
   color: #f4b613;
 }
-/* line 322, ../sass/main.scss */
+/* line 324, ../sass/main.scss */
 .content .ad1 {
   width: 100%;
 }
-/* line 326, ../sass/main.scss */
+/* line 328, ../sass/main.scss */
 .content .ad2 {
   padding-left: 10px;
 }
-/* line 330, ../sass/main.scss */
+/* line 332, ../sass/main.scss */
 .content .ad3 li {
   display: inline-block;
   vertical-align: middle;
@@ -656,26 +658,26 @@ body {
   *zoom: 1;
   *display: inline;
 }
-/* line 333, ../sass/main.scss */
+/* line 335, ../sass/main.scss */
 .content .ad3 .fix_ad3_right {
   padding-right: 3px;
 }
-/* line 337, ../sass/main.scss */
+/* line 339, ../sass/main.scss */
 .content .ad4 {
   padding-left: 10px;
 }
-/* line 341, ../sass/main.scss */
+/* line 343, ../sass/main.scss */
 .content .ad4 .search_box input {
   padding: 1px 0px;
   border: 1px solid #999;
   width: 160px;
 }
-/* line 347, ../sass/main.scss */
+/* line 349, ../sass/main.scss */
 .content .ad4 .search_btn {
   padding-top: 16px;
   padding-bottom: 30px;
 }
-/* line 352, ../sass/main.scss */
+/* line 354, ../sass/main.scss */
 .content .ad4 .search_btn button {
   border: none;
   background: url("../images/bg-searchbtn1.png") no-repeat scroll 0 0 transparent;
@@ -683,49 +685,49 @@ body {
   height: 26px;
   cursor: pointer;
 }
-/* line 361, ../sass/main.scss */
+/* line 363, ../sass/main.scss */
 .content .ad5 {
   width: 450px;
 }
-/* line 363, ../sass/main.scss */
+/* line 365, ../sass/main.scss */
 .content .ad5 .artical_listbox li a {
   width: 340px;
 }
-/* line 365, ../sass/main.scss */
+/* line 367, ../sass/main.scss */
 .content .ad6 {
   padding-top: 14px;
   padding-left: 40px;
 }
-/* line 370, ../sass/main.scss */
+/* line 372, ../sass/main.scss */
 .content .ad6 .tagal {
   width: 200px;
   height: 96px;
   background: url("../images/bg-tagal.png") no-repeat scroll 0 0 transparent;
 }
-/* line 375, ../sass/main.scss */
+/* line 377, ../sass/main.scss */
 .content .ad6 .tagal_title {
   font-size: 15px;
   line-height: 30px;
 }
 
-/* line 381, ../sass/main.scss */
+/* line 383, ../sass/main.scss */
 .footer {
   width: 960px;
   padding-top: 18px;
   background: url("../images/bg-footer.png") no-repeat scroll 0 0 #fff;
   margin: 0 auto;
 }
-/* line 386, ../sass/main.scss */
+/* line 388, ../sass/main.scss */
 .footer a {
   color: #10387e;
   text-decoration: none;
 }
-/* line 390, ../sass/main.scss */
+/* line 392, ../sass/main.scss */
 .footer a:hover {
   text-decoration: underline;
   color: #f4b613;
 }
-/* line 394, ../sass/main.scss */
+/* line 396, ../sass/main.scss */
 .footer .footer-info {
   display: inline-block;
   vertical-align: middle;
@@ -734,16 +736,16 @@ body {
   *display: inline;
   width: 450px;
 }
-/* line 398, ../sass/main.scss */
+/* line 400, ../sass/main.scss */
 .footer .footer-info-link {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-/* line 404, ../sass/main.scss */
+/* line 406, ../sass/main.scss */
 .footer .footer-info-icp {
   padding-bottom: 10px;
 }
-/* line 409, ../sass/main.scss */
+/* line 411, ../sass/main.scss */
 .footer div.brand {
   float: right;
   background: url("../images/bg-brand.png") no-repeat scroll 0 0 #fff;
