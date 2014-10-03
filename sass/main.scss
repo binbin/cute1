@@ -79,12 +79,20 @@ $content-width:960px;
 .grid-48 { width:952px; }
 /* End 栅格化布局样式 */
 .grid520{width:520px;}
-.gird-top10{
+.padding-top10{
   padding-top:10px;
 }
-.panel-top20{
+.margin-top10{
+  margin-top:10px;
+}
+.margin-top20{
   margin-top:20px;
 }
+/*
+.margin-bottom20{
+  margin-bottom:20px;
+}
+*/
 
 .panel{
   padding-top:9px;
@@ -139,12 +147,49 @@ $content-width:960px;
           text-decoration: underline;
           color:rgb(244,182,19);
        }
+       .bookmark{background:url("../images/icon-bookmark_12.png") no-repeat scroll 0 0 transparent;}
+       .eye{background:url("../images/icon-eye_12.png") no-repeat scroll 0 0 transparent;}
+       .globe{background:url("../images/icon-globe_12.png") no-repeat scroll 0 0 transparent;} 
+       .heart{background:url("../images/icon-heart_12.png") no-repeat scroll 0 0 transparent;} 
+       .list{background:url("../images/icon-list_12.png") no-repeat scroll 0 0 transparent;} 
+       .terminal{background:url("../images/icon-terminal_12.png") no-repeat scroll 0 0 transparent;} 
+       .trolley{background:url("../images/icon-trolley_12.png") no-repeat scroll 0 0 transparent;}
+
      }
   }
+  .search_box{
+      padding-right:10px;
+      input{
+        padding: 1px 0px;
+        border: 1px solid #999;
+        width:100%;
+      }
+    }
+    .search_btn{
+     padding:{
+      top:16px;
+      bottom:30px;
+     }
+     button{
+       border:none;
+       background:url("../images/bg-searchbtn1.png") no-repeat scroll 0 0 transparent;
+       width:122px;
+       height:26px;
+       cursor:pointer;
+     }
+    }
 }
 .panel413{
   background:url("../images/bg-panel413.png") no-repeat scroll 0 0 transparent;
   width:413px;
+}
+.panel164{
+  background:url("../images/bg-panel164.png") no-repeat scroll 0 0 transparent;
+  width:164px;
+}
+.panel170{
+  background:url("../images/bg-panel170.png") no-repeat scroll 0 0 transparent;
+  width:170px;
 }
 .panel177{
   background:url("../images/bg-panel177.png") no-repeat scroll 0 0 transparent;
@@ -218,7 +263,7 @@ $content-width:960px;
 	background-color:#fff;
 	@include border-corner-radius(top, left, 5px);
 	@include border-corner-radius(top, right, 5px);
-	min-height:900px;
+	/*min-height:900px;*/
 	.navbar{
 	  width:100%;
 	  height:39px;
@@ -338,27 +383,6 @@ $content-width:960px;
   }
   .ad4{
     padding-left:10px;
-    .search_box{
-
-      input{
-        padding: 1px 0px;
-        border: 1px solid #999;
-        width:160px;
-      }
-    }
-    .search_btn{
-     padding:{
-      top:16px;
-      bottom:30px;
-     }
-     button{
-       border:none;
-       background:url("../images/bg-searchbtn1.png") no-repeat scroll 0 0 transparent;
-       width:122px;
-       height:26px;
-       cursor:pointer;
-     }
-    }
   }
   .ad5{
      width:450px;
@@ -379,6 +403,38 @@ $content-width:960px;
       line-height: 30px;
     }
   }
+  .ad7{
+    padding:{
+      top:50px;
+      left:5px;
+    }
+  }
+  .sub_page_imgbox{
+    img{/*width:580px;*/width:100%;height:auto;}
+  }
+  .sub_page_content{
+    padding:{
+     left:10px;
+     bottom:20px;
+    }
+    .sub_page_content_title{
+      font:{
+       size:18px;
+       weight:bold;
+      }
+      padding:{
+        top:20px;
+        bottom:20px;
+      }
+    }
+    .sub_page_content_content{
+      padding:0;
+      margin:0;
+      position:relative;
+      line-height: 20px;
+    }
+  }
+  
 }
 .footer{
    width:960px;
