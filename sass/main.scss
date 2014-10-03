@@ -95,7 +95,7 @@ $content-width:960px;
 */
 
 .panel{
-  padding-top:9px;
+  padding-top:6px;
   .panel-title{
      @include inline-block;
      color:#000;
@@ -108,7 +108,7 @@ $content-width:960px;
       top:10px;
       bottom:10px;
      }*/
-     line-height:30px;
+     line-height:26px;
      .more{
       @include inline-block;
       float:right;
@@ -182,8 +182,7 @@ $content-width:960px;
     }
     .search_btn{
      padding:{
-      top:16px;
-      bottom:30px;
+      top:12px;
      }
      button{
        border:none;
@@ -422,6 +421,7 @@ $content-width:960px;
     padding:{
       top:50px;
       left:5px;
+      bottom:20px;
     }
   }
   .sub_page_imgbox{
