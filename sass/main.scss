@@ -26,7 +26,7 @@ $content-width:960px;
 }
 
 /* 栅格化布局样式 */
-.wrap { width: 952px;margin: 0 auto; position:relative; }
+.wrap { /*width: 952px;*/width: 960px;margin: 0 auto; position:relative; }
 .grid { margin-right:8px; float: left; display: inline-block;}
 .grid.grid-fixed {margin-right:0;}
 .grid-1 { width:12px; }
@@ -97,13 +97,18 @@ $content-width:960px;
 .panel{
   padding-top:9px;
   .panel-title{
+     @include inline-block;
+     color:#000;
+     /*有可能是链接*/
+     text-decoration: none;
      font-size:15px;
      font-weight:bold;
      padding-left:7px;
-     padding:{
+     /*padding:{
       top:10px;
       bottom:10px;
-     }
+     }*/
+     line-height:30px;
      .more{
       @include inline-block;
       float:right;
@@ -117,13 +122,23 @@ $content-width:960px;
           text-decoration: underline;
           color:rgb(244,182,19);
        }
+      .sword{
+        color:rgb(137,198,68);
+        padding-left: 16px;
+      }
+  }
+  .panel-title:hover{
+    color:rgb(255,204,0);
+    .sword{
+      color:rgb(255,204,0);
+    }
   }
   .content-text{
     line-height:20px;
     word-wrap: break-word;
     word-break: break-all;
   }
-  .linklistbox{
+  .panelcontentbox{
      background:rgb(245,245,245);
      border:1px solid rgb(233,233,233);
      @include border-radius(3px);
@@ -131,32 +146,32 @@ $content-width:960px;
       top:5px;
       bottom:5px;
       left:8px;
-     }
-     li{
-       padding:{
-         top:5px;
-         bottom:5px;
-       }
-       a{
-         background:url("../images/bg-linklistitem.png") no-repeat scroll 0 0 transparent;
-         padding-left:23px;
-         color:rgb(16,56,126);
-         text-decoration: none; 
-       }
-       a:hover{
-          text-decoration: underline;
-          color:rgb(244,182,19);
-       }
-       .bookmark{background:url("../images/icon-bookmark_12.png") no-repeat scroll 0 0 transparent;}
-       .eye{background:url("../images/icon-eye_12.png") no-repeat scroll 0 0 transparent;}
-       .globe{background:url("../images/icon-globe_12.png") no-repeat scroll 0 0 transparent;} 
-       .heart{background:url("../images/icon-heart_12.png") no-repeat scroll 0 0 transparent;} 
-       .list{background:url("../images/icon-list_12.png") no-repeat scroll 0 0 transparent;} 
-       .terminal{background:url("../images/icon-terminal_12.png") no-repeat scroll 0 0 transparent;} 
-       .trolley{background:url("../images/icon-trolley_12.png") no-repeat scroll 0 0 transparent;}
-
+      right: 8px;
      }
   }
+  li{
+     padding:{
+       top:5px;
+       bottom:5px;
+     }
+     a{
+       background:url("../images/bg-linklistitem.png") no-repeat scroll 0 0 transparent;
+       padding-left:23px;
+       color:rgb(16,56,126);
+       text-decoration: none; 
+     }
+     a:hover{
+        text-decoration: underline;
+        color:rgb(244,182,19);
+     }
+     .bookmark{background:url("../images/icon-bookmark_12.png") no-repeat scroll 0 0 transparent;}
+     .eye{background:url("../images/icon-eye_12.png") no-repeat scroll 0 0 transparent;}
+     .globe{background:url("../images/icon-globe_12.png") no-repeat scroll 0 0 transparent;} 
+     .heart{background:url("../images/icon-heart_12.png") no-repeat scroll 0 0 transparent;} 
+     .list{background:url("../images/icon-list_12.png") no-repeat scroll 0 0 transparent;} 
+     .terminal{background:url("../images/icon-terminal_12.png") no-repeat scroll 0 0 transparent;} 
+     .trolley{background:url("../images/icon-trolley_12.png") no-repeat scroll 0 0 transparent;}
+   }
   .search_box{
       padding-right:10px;
       input{
