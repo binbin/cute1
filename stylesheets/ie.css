@@ -3,18 +3,21 @@
  * <!--[if IE]>
  *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
  * <![endif]--> */
-/* line 9, ../sass/ie.scss */
+/*.content{
+    background:url("../images/bg-top.png") no-repeat scroll 0 0 #fff;
+}*/
+/* line 11, ../sass/ie.scss */
 .content .navbar .nav a {
   width: 76px;
   height: 24px;
   line-height: 24px;
   padding: 0;
 }
-/* line 15, ../sass/ie.scss */
+/* line 17, ../sass/ie.scss */
 .content .navbar .nav a.current, .content .navbar .nav a:hover {
   background: url("../images/bg-nav1.png") no-repeat scroll 0 0 transparent;
 }
-/* line 18, ../sass/ie.scss */
+/* line 20, ../sass/ie.scss */
 .content .navbar .nav span.sword {
   padding: 0;
   height: 24px;
