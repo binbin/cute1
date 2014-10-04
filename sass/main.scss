@@ -156,7 +156,7 @@ $content-width:960px;
         padding-left: 16px;
       }
   }
-  .panel-title:hover{
+  a.panel-title:hover{
     color:rgb(255,204,0);
     .sword{
       color:rgb(255,204,0);
@@ -639,12 +639,12 @@ $content-width:960px;
       }
     }
     .map_box{
-      padding-top:50px;
+      padding-top:30px;
       .left{
-        width:390px;
+        width:420px;
         float:left;
-        height:320px;
-        background:url("../images/tagalworld_cn.png") no-repeat scroll 0 0 transparent;
+        height:360px;
+        background:url("../images/tagalworld_cn.png") no-repeat scroll 0 16px transparent;
         p{
           background:url("../images/bg_contact.png") repeat-y scroll 0 0 transparent;
           width:300px;

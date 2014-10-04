@@ -435,11 +435,11 @@ html, body {
   padding-left: 16px;
 }
 /* line 159, ../sass/main.scss */
-.panel .panel-title:hover {
+.panel a.panel-title:hover {
   color: #ffcc00;
 }
 /* line 161, ../sass/main.scss */
-.panel .panel-title:hover .sword {
+.panel a.panel-title:hover .sword {
   color: #ffcc00;
 }
 /* line 165, ../sass/main.scss */
@@ -1016,14 +1016,14 @@ html, body {
 }
 /* line 641, ../sass/main.scss */
 .content .map_box {
-  padding-top: 50px;
+  padding-top: 30px;
 }
 /* line 643, ../sass/main.scss */
 .content .map_box .left {
-  width: 390px;
+  width: 420px;
   float: left;
-  height: 320px;
-  background: url("../images/tagalworld_cn.png") no-repeat scroll 0 0 transparent;
+  height: 360px;
+  background: url("../images/tagalworld_cn.png") no-repeat scroll 0 16px transparent;
 }
 /* line 648, ../sass/main.scss */
 .content .map_box .left p {
