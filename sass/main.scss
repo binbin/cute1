@@ -449,6 +449,41 @@ $content-width:960px;
       line-height: 20px;
     }
   }
+  .news{
+        padding-bottom:20px;
+        .news_title{
+          font:{
+           size:18px;
+           weight:bold;
+          }
+          padding:{
+            top:46px;
+            bottom:10px;
+          }
+          line-height: 22px;
+          color:rgb(16,56,126);
+          text-align: left;
+          word-wrap: break-word;
+          word-break: break-all;
+        }
+        .news_date{
+         color:#666;
+         line-height:20px;
+        }
+        .news_content{
+          .news_imgbox{
+            float:left;
+            padding:2px;
+            border:1px solid #666;
+          }
+          .img_desc{
+             text-align:right;
+             color:#666;
+             font-size:10px;
+          }
+        }  
+    }
+
   
 }
 .footer{

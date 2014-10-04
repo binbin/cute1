@@ -819,25 +819,58 @@ body {
   position: relative;
   line-height: 20px;
 }
-
+/* line 452, ../sass/main.scss */
+.content .news {
+  padding-bottom: 20px;
+}
 /* line 454, ../sass/main.scss */
+.content .news .news_title {
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 46px;
+  padding-bottom: 10px;
+  line-height: 22px;
+  color: #10387e;
+  text-align: left;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+/* line 469, ../sass/main.scss */
+.content .news .news_date {
+  color: #666;
+  line-height: 20px;
+}
+/* line 474, ../sass/main.scss */
+.content .news .news_content .news_imgbox {
+  float: left;
+  padding: 2px;
+  border: 1px solid #666;
+}
+/* line 479, ../sass/main.scss */
+.content .news .news_content .img_desc {
+  text-align: right;
+  color: #666;
+  font-size: 10px;
+}
+
+/* line 489, ../sass/main.scss */
 .footer {
   width: 960px;
   padding-top: 18px;
   background: url("../images/bg-footer.png") no-repeat scroll 0 0 #fff;
   margin: 0 auto;
 }
-/* line 459, ../sass/main.scss */
+/* line 494, ../sass/main.scss */
 .footer a {
   color: #10387e;
   text-decoration: none;
 }
-/* line 463, ../sass/main.scss */
+/* line 498, ../sass/main.scss */
 .footer a:hover {
   text-decoration: underline;
   color: #f4b613;
 }
-/* line 467, ../sass/main.scss */
+/* line 502, ../sass/main.scss */
 .footer .footer-info {
   display: inline-block;
   vertical-align: middle;
@@ -846,16 +879,16 @@ body {
   *display: inline;
   width: 450px;
 }
-/* line 471, ../sass/main.scss */
+/* line 506, ../sass/main.scss */
 .footer .footer-info-link {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-/* line 477, ../sass/main.scss */
+/* line 512, ../sass/main.scss */
 .footer .footer-info-icp {
   padding-bottom: 10px;
 }
-/* line 482, ../sass/main.scss */
+/* line 517, ../sass/main.scss */
 .footer div.brand {
   float: right;
   background: url("../images/bg-brand.png") no-repeat scroll 0 0 #fff;
