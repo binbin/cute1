@@ -596,6 +596,48 @@ $content-width:960px;
           }
        }
     }
+    .concat_page_box{
+      padding:{
+        top:48px;
+        left:20px;
+        right:20px;
+      }
+    }
+    .concat_message_box{
+      padding:{
+       top:6px;
+       bottom:10px;
+       left:20px;
+       right:20px;
+      }
+      .left{
+        width:220px;
+        float:left;
+      }
+      .right{
+       margin-left:240px;
+      }
+      background:rgb(229,229,229);
+      @include border-radius(5px);
+      h2{
+        font:{
+         size:12px;
+         weight:bold;
+        }
+        border-bottom:1px solid #000;
+        line-height:24px;
+        margin-bottom:5px;
+      }
+      p{
+        line-height: 16px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        a{
+            color:rgb(16,56,126);
+            text-decoration:none;
+        }
+      }
+    }
   
 }
 .footer{
