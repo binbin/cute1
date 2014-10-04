@@ -638,7 +638,25 @@ $content-width:960px;
         }
       }
     }
-  
+    .map_box{
+      .left{
+        width:390px;
+        float:left;
+        height:230px;
+        padding-top:20px;
+        img{
+         width:390px;
+         height:auto;
+        }
+      }
+      .right{
+       padding-top:160px;
+       img{
+        width:282px;
+        height:auto;
+       }
+      }
+    }
 }
 .footer{
    position:absolute;
