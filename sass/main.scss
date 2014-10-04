@@ -1,3 +1,4 @@
+@charset "utf-8";
 @import "compass/reset";
 @import "compass/css3";
 @import "compass/typography/links/unstyled-link";
@@ -10,11 +11,27 @@
     outline: 0;
 }
 
-body{
+html,body{
 	font-size:12px;
   /*font-family: cursive;*/
   font-family: Arial;
 	background-color:rgb(192,192,192);
+  height:100%;
+}
+
+#container{
+  padding-top: 30px;
+  position:relative;
+  font-size:12px;
+  min-height:100%;
+  height:auto !important;
+  height:100%;
+  position:relative;
+
+  width: 960px;
+  margin: 0 auto;
+  
+  background:url("../images/bg-topbar.png") no-repeat scroll 0 0 #fff;
 }
 
 $content-width:960px;
@@ -22,7 +39,19 @@ $content-width:960px;
 @mixin content{
 	width:$content-width;
 	margin:0 auto;
-  position:relative;
+  font-size:12px;
+  
+  /*min-height:100%;
+  height:auto !important;
+  height:100%;
+
+  position:relative;*/
+  
+
+  padding-bottom:72px;
+
+
+
 }
 
 /* 栅格化布局样式 */
@@ -171,6 +200,10 @@ $content-width:960px;
      .list{background:url("../images/icon-list_12.png") no-repeat scroll 0 0 transparent;} 
      .terminal{background:url("../images/icon-terminal_12.png") no-repeat scroll 0 0 transparent;} 
      .trolley{background:url("../images/icon-trolley_12.png") no-repeat scroll 0 0 transparent;}
+     .career{background:url("../images/icon-career_12.png") no-repeat scroll 0 0 transparent;}
+     .investor{background:url("../images/icon-investor_12.png") no-repeat scroll 0 0 transparent;}
+     .notice{background:url("../images/icon-notice_12.png") no-repeat scroll 0 0 transparent;}
+     .tagal{background:url("../images/icon-tagal_12.png") no-repeat scroll 0 0 transparent;}
    }
   .search_box{
       padding-right:10px;
@@ -270,13 +303,8 @@ $content-width:960px;
 
 .content{
 	@include content;
-	margin:{
-      top:20px;
-    }
-	padding-top:10px;
-	background-color:#fff;
-	@include border-corner-radius(top, left, 5px);
-	@include border-corner-radius(top, right, 5px);
+
+	
 	/*min-height:900px;*/
 	.navbar{
 	  width:100%;
@@ -484,11 +512,69 @@ $content-width:960px;
           }
         }  
     }
-
+    .search_page_box{
+      .maintitle{
+        color:rgb(16,56,126);
+        font-size:16px;
+        line-height:30px;
+      }
+      .desc{
+        line-height: 16px;
+        margin-bottom: 18px;
+        margin-top: 10px;
+      }
+      .search_in_box{
+        background:rgb(227,234,240);
+        padding:{
+          left:12px;
+          top:5px;
+          bottom:5px;
+        }
+        .subtitle{
+          color:rgb(16,56,126);
+          font-size:14px;
+          line-height:26px;
+        }
+        .inbox{
+          height:40px;
+        }
+        input{
+         border:none;
+         width:350px;
+         height:26px;
+         line-height:26px;
+         background:url("../images/bg-searchbox_l.png") no-repeat scroll 0 0 transparent;
+         font-size:12px;
+         padding:{
+          left:10px;
+          right:10px;
+         }
+         vertical-align: middle;
+        }
+        button{
+         border:none;
+         background:url("../images/bg-searchbtn1.png") no-repeat scroll 0 0 transparent;
+         width:122px;
+         height:28px;
+         cursor:pointer;
+         vertical-align: middle;
+         margin-left:10px;
+       }
+      }
+      .input_desc{
+       color:#999;
+       line-height: 30px;
+      }
+    }
   
 }
 .footer{
+   position:absolute;
+   bottom:0;
    width:960px;
+   height:54px;/*footer的高度*/
+   clear:both;
+   
    padding-top:18px;
    background:url("../images/bg-footer.png") no-repeat scroll 0 0 #fff;
    margin: 0 auto;
