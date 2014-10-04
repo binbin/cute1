@@ -1014,29 +1014,36 @@ html, body {
   color: #10387e;
   text-decoration: none;
 }
-/* line 642, ../sass/main.scss */
+/* line 641, ../sass/main.scss */
+.content .map_box {
+  padding-top: 50px;
+}
+/* line 643, ../sass/main.scss */
 .content .map_box .left {
   width: 390px;
   float: left;
-  height: 230px;
-  padding-top: 20px;
+  height: 320px;
+  background: url("../images/tagalworld_cn.png") no-repeat scroll 0 0 transparent;
 }
-/* line 647, ../sass/main.scss */
-.content .map_box .left img {
-  width: 390px;
-  height: auto;
+/* line 648, ../sass/main.scss */
+.content .map_box .left p {
+  background: url("../images/bg_contact.png") repeat-y scroll 0 0 transparent;
+  width: 300px;
+  padding-left: 20px;
+  padding-right: 21px;
+  line-height: 16px;
 }
-/* line 652, ../sass/main.scss */
+/* line 658, ../sass/main.scss */
 .content .map_box .right {
-  padding-top: 160px;
+  padding-top: 120px;
 }
-/* line 654, ../sass/main.scss */
+/* line 660, ../sass/main.scss */
 .content .map_box .right img {
-  width: 282px;
+  width: 280px;
   height: auto;
 }
 
-/* line 661, ../sass/main.scss */
+/* line 667, ../sass/main.scss */
 .footer {
   position: absolute;
   bottom: 0;
@@ -1048,17 +1055,17 @@ html, body {
   background: url("../images/bg-footer.png") no-repeat scroll 0 0 #fff;
   margin: 0 auto;
 }
-/* line 671, ../sass/main.scss */
+/* line 677, ../sass/main.scss */
 .footer a {
   color: #10387e;
   text-decoration: none;
 }
-/* line 675, ../sass/main.scss */
+/* line 681, ../sass/main.scss */
 .footer a:hover {
   text-decoration: underline;
   color: #f4b613;
 }
-/* line 679, ../sass/main.scss */
+/* line 685, ../sass/main.scss */
 .footer .footer-info {
   display: inline-block;
   vertical-align: middle;
@@ -1067,16 +1074,16 @@ html, body {
   *display: inline;
   width: 450px;
 }
-/* line 683, ../sass/main.scss */
+/* line 689, ../sass/main.scss */
 .footer .footer-info-link {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-/* line 689, ../sass/main.scss */
+/* line 695, ../sass/main.scss */
 .footer .footer-info-icp {
   padding-bottom: 10px;
 }
-/* line 694, ../sass/main.scss */
+/* line 700, ../sass/main.scss */
 .footer div.brand {
   float: right;
   background: url("../images/bg-brand.png") no-repeat scroll 0 0 #fff;

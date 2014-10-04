@@ -639,20 +639,26 @@ $content-width:960px;
       }
     }
     .map_box{
+      padding-top:50px;
       .left{
         width:390px;
         float:left;
-        height:230px;
-        padding-top:20px;
-        img{
-         width:390px;
-         height:auto;
+        height:320px;
+        background:url("../images/tagalworld_cn.png") no-repeat scroll 0 0 transparent;
+        p{
+          background:url("../images/bg_contact.png") repeat-y scroll 0 0 transparent;
+          width:300px;
+          padding:{
+           left:20px;
+           right:21px;
+          }
+          line-height: 16px;
         }
       }
       .right{
-       padding-top:160px;
+       padding-top:120px;
        img{
-        width:282px;
+        width:280px;
         height:auto;
        }
       }
