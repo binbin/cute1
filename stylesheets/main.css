@@ -937,8 +937,40 @@ html, body {
   color: #999;
   line-height: 30px;
 }
-
+/* line 569, ../sass/main.scss */
+.content .search_result_box {
+  padding-top: 20px;
+}
 /* line 571, ../sass/main.scss */
+.content .search_result_box .search_result_title {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 30px;
+  border-bottom: 2px solid #999;
+}
+/* line 580, ../sass/main.scss */
+.content .search_result_box .search_result_list li {
+  padding-top: 12px;
+  font-size: 14px;
+}
+/* line 583, ../sass/main.scss */
+.content .search_result_box .search_result_list li a {
+  color: #10387e;
+  text-decoration: none;
+  line-height: 24px;
+}
+/* line 588, ../sass/main.scss */
+.content .search_result_box .search_result_list li p {
+  line-height: 16px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+/* line 593, ../sass/main.scss */
+.content .search_result_box .search_result_list li em {
+  color: #d71345;
+}
+
+/* line 601, ../sass/main.scss */
 .footer {
   position: absolute;
   bottom: 0;
@@ -950,17 +982,17 @@ html, body {
   background: url("../images/bg-footer.png") no-repeat scroll 0 0 #fff;
   margin: 0 auto;
 }
-/* line 581, ../sass/main.scss */
+/* line 611, ../sass/main.scss */
 .footer a {
   color: #10387e;
   text-decoration: none;
 }
-/* line 585, ../sass/main.scss */
+/* line 615, ../sass/main.scss */
 .footer a:hover {
   text-decoration: underline;
   color: #f4b613;
 }
-/* line 589, ../sass/main.scss */
+/* line 619, ../sass/main.scss */
 .footer .footer-info {
   display: inline-block;
   vertical-align: middle;
@@ -969,16 +1001,16 @@ html, body {
   *display: inline;
   width: 450px;
 }
-/* line 593, ../sass/main.scss */
+/* line 623, ../sass/main.scss */
 .footer .footer-info-link {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-/* line 599, ../sass/main.scss */
+/* line 629, ../sass/main.scss */
 .footer .footer-info-icp {
   padding-bottom: 10px;
 }
-/* line 604, ../sass/main.scss */
+/* line 634, ../sass/main.scss */
 .footer div.brand {
   float: right;
   background: url("../images/bg-brand.png") no-repeat scroll 0 0 #fff;
