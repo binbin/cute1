@@ -663,6 +663,111 @@ $content-width:960px;
        }
       }
     }
+    .mem_wrap{
+      padding:{
+        top:40px;
+        left:20px;
+      }
+      ul.labels{
+        li{
+           @include inline-block;
+           padding-right:5px;
+           a{
+             text-decoration:none;
+             text-align:left;
+             color:rgb(210,216,224);
+             /*font-size:14px;*/
+             border-bottom:3px solid rgb(210,216,224);
+             padding:{
+              /*left:8px;
+              right:8px;*/
+              top:5px;
+              bottom:4px;
+             }
+             width: 54px;
+             @include inline-block;
+           }
+           a.highlight{
+             color:rgb(255,229,126);
+             border-bottom:3px solid rgb(255,229,126);
+             text-align:center;
+             width: 60px;
+           }
+        }
+      }
+      .mem_box{
+         background:url("../images/bg-mem-line.png") repeat-y scroll 20px 0 transparent;
+         margin:{
+          top:20px;
+         }
+         max-width: 660px; 
+         ul.mems{
+           li{
+              a{
+                @include inline-block;
+                padding:{
+                 left:50px;
+                 bottom:20px;
+                }
+                background:url("../images/icon-circle.png") no-repeat scroll 15px 0 transparent;
+                text-decoration:none;
+                color:rgb(16,56,126);
+                word-wrap: break-word;
+                word-break: break-all;
+
+                .m_box{
+                  @include border-radius(3px);
+                  border:1px solid rgb(235,235,235);
+                  background:rgb(245,245,245);
+                  overflow:hidden;
+                  .left{
+                     float:left;
+                     width:138px;
+                     padding:{
+                       top:10px;
+                       left:5px;
+                     }
+                     .date{
+                       color:#333;
+                       background:#fff;
+                       line-height:20px;
+                       padding:{
+                        left:5px;
+                        right:5px;
+                       }
+                     }
+                     .txt{
+                       line-height:16px;
+                       word-wrap: break-word;
+                       word-break: break-all;
+                       padding:{
+                         top:5px;
+                         bottom:5px;
+                       }
+                     }
+                  }
+                  .right{
+                    margin-left:138px + 20px;
+                    .txt{
+                       line-height:16px;
+                       word-wrap: break-word;
+                       word-break: break-all;
+                       padding:{
+                        top:8px;
+                        right:5px;
+                       }
+                       img{
+                        width:150px;
+                        height:auto;
+                       }
+                     }
+                  }
+                }
+              }
+           }
+         }
+      }
+    }
 }
 .footer{
    position:absolute;

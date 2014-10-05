@@ -1042,8 +1042,117 @@ html, body {
   width: 280px;
   height: auto;
 }
+/* line 666, ../sass/main.scss */
+.content .mem_wrap {
+  padding-top: 40px;
+  padding-left: 20px;
+}
+/* line 672, ../sass/main.scss */
+.content .mem_wrap ul.labels li {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  padding-right: 5px;
+}
+/* line 675, ../sass/main.scss */
+.content .mem_wrap ul.labels li a {
+  text-decoration: none;
+  text-align: left;
+  color: #d2d8e0;
+  /*font-size:14px;*/
+  border-bottom: 3px solid #d2d8e0;
+  /*left:8px;
+  right:8px;*/
+  padding-top: 5px;
+  padding-bottom: 4px;
+  width: 54px;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+}
+/* line 690, ../sass/main.scss */
+.content .mem_wrap ul.labels li a.highlight {
+  color: #ffe57e;
+  border-bottom: 3px solid #ffe57e;
+  text-align: center;
+  width: 60px;
+}
+/* line 698, ../sass/main.scss */
+.content .mem_wrap .mem_box {
+  background: url("../images/bg-mem-line.png") repeat-y scroll 20px 0 transparent;
+  margin-top: 20px;
+  max-width: 660px;
+}
+/* line 706, ../sass/main.scss */
+.content .mem_wrap .mem_box ul.mems li a {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  padding-left: 50px;
+  padding-bottom: 20px;
+  background: url("../images/icon-circle.png") no-repeat scroll 15px 0 transparent;
+  text-decoration: none;
+  color: #10387e;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+/* line 718, ../sass/main.scss */
+.content .mem_wrap .mem_box ul.mems li a .m_box {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #ebebeb;
+  background: whitesmoke;
+  overflow: hidden;
+}
+/* line 723, ../sass/main.scss */
+.content .mem_wrap .mem_box ul.mems li a .m_box .left {
+  float: left;
+  width: 138px;
+  padding-top: 10px;
+  padding-left: 5px;
+}
+/* line 730, ../sass/main.scss */
+.content .mem_wrap .mem_box ul.mems li a .m_box .left .date {
+  color: #333;
+  background: #fff;
+  line-height: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+/* line 739, ../sass/main.scss */
+.content .mem_wrap .mem_box ul.mems li a .m_box .left .txt {
+  line-height: 16px;
+  word-wrap: break-word;
+  word-break: break-all;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+/* line 749, ../sass/main.scss */
+.content .mem_wrap .mem_box ul.mems li a .m_box .right {
+  margin-left: 158px;
+}
+/* line 751, ../sass/main.scss */
+.content .mem_wrap .mem_box ul.mems li a .m_box .right .txt {
+  line-height: 16px;
+  word-wrap: break-word;
+  word-break: break-all;
+  padding-top: 8px;
+  padding-right: 5px;
+}
+/* line 759, ../sass/main.scss */
+.content .mem_wrap .mem_box ul.mems li a .m_box .right .txt img {
+  width: 150px;
+  height: auto;
+}
 
-/* line 667, ../sass/main.scss */
+/* line 772, ../sass/main.scss */
 .footer {
   position: absolute;
   bottom: 0;
@@ -1055,17 +1164,17 @@ html, body {
   background: url("../images/bg-footer.png") no-repeat scroll 0 0 #fff;
   margin: 0 auto;
 }
-/* line 677, ../sass/main.scss */
+/* line 782, ../sass/main.scss */
 .footer a {
   color: #10387e;
   text-decoration: none;
 }
-/* line 681, ../sass/main.scss */
+/* line 786, ../sass/main.scss */
 .footer a:hover {
   text-decoration: underline;
   color: #f4b613;
 }
-/* line 685, ../sass/main.scss */
+/* line 790, ../sass/main.scss */
 .footer .footer-info {
   display: inline-block;
   vertical-align: middle;
@@ -1074,16 +1183,16 @@ html, body {
   *display: inline;
   width: 450px;
 }
-/* line 689, ../sass/main.scss */
+/* line 794, ../sass/main.scss */
 .footer .footer-info-link {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-/* line 695, ../sass/main.scss */
+/* line 800, ../sass/main.scss */
 .footer .footer-info-icp {
   padding-bottom: 10px;
 }
-/* line 700, ../sass/main.scss */
+/* line 805, ../sass/main.scss */
 .footer div.brand {
   float: right;
   background: url("../images/bg-brand.png") no-repeat scroll 0 0 #fff;
