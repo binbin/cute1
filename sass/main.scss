@@ -36,6 +36,29 @@ html,body{
 
 $content-width:960px;
 
+@mixin menu_icon_setting{
+  li{
+      .i-HDG{background:url("../images/bg-menu-HDG.png") no-repeat scroll 10px 5px transparent;}
+      .i-conce{background:url("../images/bg-menu-conce.png") no-repeat scroll 10px 5px transparent;}
+      .i-cul{background:url("../images/bg-menu-cul.png") no-repeat scroll 10px 5px transparent;}
+      .i-markets{background:url("../images/bg-menu-markets.png") no-repeat scroll 10px 5px transparent;}
+      .i-obj{background:url("../images/bg-menu-obj.png") no-repeat scroll 10px 5px transparent;}
+      .i-orga{background:url("../images/bg-menu-orga.png") no-repeat scroll 10px 5px transparent;}
+      .i-organization{background:url("../images/bg-menu-organization.png") no-repeat scroll 10px 5px transparent;}
+      .i-techn{background:url("../images/bg-menu-techn.png") no-repeat scroll 10px 5px transparent;}
+    }
+    li:hover{
+      .i-HDG{background:url("../images/bg-menu-orga.png") no-repeat scroll 10px 5px transparent;}
+      .i-conce{background:url("../images/bg-menu-conce.png") no-repeat scroll 10px 5px transparent;}
+      .i-cul{background:url("../images/bg-menu-cul.png") no-repeat scroll 10px 5px transparent;}
+      .i-markets{background:url("../images/bg-menu-markets.png") no-repeat scroll 10px 5px transparent;}
+      .i-obj{background:url("../images/bg-menu-obj.png") no-repeat scroll 10px 5px transparent;}
+      .i-orga{background:url("../images/bg-menu-orga.png") no-repeat scroll 10px 5px transparent;}
+      .i-organization{background:url("../images/bg-menu-organization.png") no-repeat scroll 10px 5px transparent;}
+      .i-techn{background:url("../images/bg-menu-techn.png") no-repeat scroll 10px 5px transparent;}
+    }
+}
+
 @mixin content{
 	width:$content-width;
 	margin:0 auto;
@@ -327,7 +350,8 @@ $content-width:960px;
 	    margin-left:125px - $space;
 	    font-size:15px;
 	    padding-top: 4px;
-        a{
+        .item{
+          cursor:pointer;
           color:#000;
           @include inline-block;
           text-decoration: none;
@@ -351,10 +375,81 @@ $content-width:960px;
            top:3px;
           }*/
         }
-        a.current,a:hover{
+        .current,a:hover{
           @include border-radius(3px);
           background:rgb(8,64,134);
           color:#fff;
+        }
+        span.item{
+          position:relative;
+          ul,li{
+          /*for ie*/
+           *float:left;
+          }
+          ul.m_box{
+            display:none;
+            position:absolute;
+            left: 0px;
+            top: 24px;
+            
+            /*图标*/
+            @include menu_icon_setting;
+
+            li{
+              position: relative;
+              text-align: left;
+              height:28px;
+              background:url("../images/bg-menu-item.png") no-repeat scroll 0 0 transparent;
+              
+              a,span{
+               color:#222;
+               text-decoration:none;
+               @include inline-block;
+               height:28px;
+               line-height:28px;
+               padding:{
+                left:38px;
+               }
+               width:100px;
+              }
+            }
+            li:hover{
+              background:url("../images/bg-menu-item-h.png") no-repeat scroll 0 0 transparent;
+              margin-bottom:-6px;
+              margin-top:-2px;
+              z-index:999;
+              height:34px;
+              a,span{
+               color:rgb(243,195,71);
+              }
+              ul.m2_box{@include inline-block;}
+            }
+            ul.m2_box{
+              /*图标*/
+              @include menu_icon_setting;
+
+              li{
+                a,span{
+                 color:#222;
+                }
+              }
+              li:hover{
+                a,span{
+                 color:rgb(243,195,71);
+                }
+              }
+              position:absolute;
+              display:none;
+              left:138px;
+              top:0;
+            }
+          }
+
+        }
+        span.item:hover{
+          ul.m_box{
+           @include inline-block;
+          }
         }
 
         .searchbox{

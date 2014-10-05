@@ -8,13 +8,13 @@
     background:url("../images/bg-top.png") no-repeat scroll 0 0 #fff;
 }*/
 .content .navbar .nav{
-    a{
+    .item{
         width:76px;
         height:24px;
         line-height:24px;
         padding:0;
     }
-	a.current,a:hover{
+	.item.current,.item:hover{
         background:url("../images/bg-nav1.png") no-repeat scroll 0 0 transparent;
      }
     span.sword{
