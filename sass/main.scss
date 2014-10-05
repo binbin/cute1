@@ -147,6 +147,10 @@ $content-width:960px;
   margin-bottom:20px;
 }
 */
+.position-static{
+  position:static
+}
+
 
 .panel{
   padding-top:6px;
@@ -767,10 +771,15 @@ $content-width:960px;
         left:20px;
       }
       ul.labels{
+        z-index:999;
+        background:#fff;
+        padding-bottom:20px;
         li{
            @include inline-block;
            padding-right:5px;
            a{
+             @include unstyled-link;
+             cursor:pointer;
              text-decoration:none;
              text-align:left;
              color:rgb(210,216,224);
@@ -793,10 +802,17 @@ $content-width:960px;
            }
         }
       }
+      ul.lebelsoverflow{
+       /*@include box-shadow(red 2px 2px 10px);*/
+       position:fixed;
+       top:0;
+       border-bottom:solid 1px #999;
+      }
       .mem_box{
          background:url("../images/bg-mem-line.png") repeat-y scroll 20px 0 transparent;
          margin:{
-          top:20px;
+          /*top:20px;*/
+          bottom:20px;
          }
          max-width: 660px; 
          ul.mems{

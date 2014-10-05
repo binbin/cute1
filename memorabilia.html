@@ -7,9 +7,11 @@
 	<!--[if lte IE 8]> 
 	<link href="./stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" /> 
 	<![endif]-->
+	<script type="text/javascript" src="./resources/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="./js/memorabilia.js"></script>
 </head>
 <body>
-	<div id="container">
+	<div id="container" class="position-static">
 		<div class="content">
 			<div class="navbar">
 				<a href="/" class="logo"></a>
@@ -48,7 +50,7 @@
 					<a href="#">Search</a>
 				</div>
 			</div>
-	        <div class="wrap">
+	        <div style="z-index:999">
 	        	<div class="grid grid-9">
 	        		<div class="ad7">
 	        			<div class="panel panel170">
@@ -99,21 +101,21 @@
 	        	<div class="grid grid-39"> 
 	        	   <div class="mem_wrap">
 	        	   	  <ul class="labels">
-	        	   	  	<li><a href="javascript:void(0)" class="highlight">Now</a></li>
-	        	   	  	<li><a href="javascript:void(0)">2013</a></li>
-	        	   	  	<li><a href="javascript:void(0)">2012</a></li>
-	        	   	  	<li><a href="javascript:void(0)">2011</a></li>
-	        	   	  	<li><a href="javascript:void(0)">2010</a></li>
-	        	   	  	<li><a href="javascript:void(0)">2009</a></li>
-	        	   	  	<li><a href="javascript:void(0)">2008</a></li>
-	        	   	  	<li><a href="javascript:void(0)">2007</a></li>
-	        	   	  	<li><a href="javascript:void(0)">2006</a></li>
-	        	   	  	<li><a href="javascript:void(0)">2005</a></li>
-	        	   	  	<li><a href="javascript:void(0)">2004</a></li>
+	        	   	  	<li data-date="2014"><a href="javascript:void(0)">Now</a></li>
+	        	   	  	<li data-date="2013"><a href="javascript:void(0)">2013</a></li>
+	        	   	  	<li data-date="2012"><a href="javascript:void(0)">2012</a></li>
+	        	   	  	<li data-date="2011"><a href="javascript:void(0)">2011</a></li>
+	        	   	  	<li data-date="2010"><a href="javascript:void(0)">2010</a></li>
+	        	   	  	<li data-date="2009"><a href="javascript:void(0)">2009</a></li>
+	        	   	  	<li data-date="2008"><a href="javascript:void(0)">2008</a></li>
+	        	   	  	<li data-date="2007"><a href="javascript:void(0)">2007</a></li>
+	        	   	  	<li data-date="2006"><a href="javascript:void(0)">2006</a></li>
+	        	   	  	<li data-date="2005"><a href="javascript:void(0)">2005</a></li>
+	        	   	  	<li data-date="2004"><a href="javascript:void(0)">2004</a></li>
 	        	   	  </ul>
 	        	   	  <div class="mem_box">
 		        	   	  <ul class="mems">
-		        	   	  	<li>
+		        	   	  	<li data-date="2014">
 		        	   	  		<a href="#">
                                   <div class="m_box">
                                   	<i></i>
@@ -128,8 +130,98 @@
                                   </div>
 		        	   	  		</a>
 		        	   	  	</li>
-		        	   	  	<li>
-		        	   	  		<a href="#" class="highlight">
+		        	   	  	<li data-date="2014">
+		        	   	  		<a href="#" >
+                                  <div class="m_box">
+                                  	<i></i>
+                                  	<div class="left">
+                                  		<div class="date">Sun Oct 05 2014</div>
+                                  		<div class="txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, neque.</div>
+                                  	</div>
+                                  	<div class="right">
+                                  		<img src="./pic/tu1.png" alt="">
+                                  	</div>
+                                  	<div class="clear"></div>
+                                  </div>
+		        	   	  		</a>
+		        	   	  	</li>
+		        	   	  	<li data-date="2013">
+		        	   	  		<a href="#" >
+                                  <div class="m_box">
+                                  	<i></i>
+                                  	<div class="left">
+                                  		<div class="date">Sun Oct 05 2014</div>
+                                  		<div class="txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, neque.</div>
+                                  	</div>
+                                  	<div class="right">
+                                  		<img src="./pic/tu1.png" alt="">
+                                  	</div>
+                                  	<div class="clear"></div>
+                                  </div>
+		        	   	  		</a>
+		        	   	  	</li>
+		        	   	  	<li data-date="2012">
+		        	   	  		<a href="#" >
+                                  <div class="m_box">
+                                  	<i></i>
+                                  	<div class="left">
+                                  		<div class="date">Sun Oct 05 2014</div>
+                                  		<div class="txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, neque.</div>
+                                  	</div>
+                                  	<div class="right">
+                                  		<img src="./pic/tu1.png" alt="">
+                                  	</div>
+                                  	<div class="clear"></div>
+                                  </div>
+		        	   	  		</a>
+		        	   	  	</li>
+		        	   	  	<li data-date="2011">
+		        	   	  		<a href="#" >
+                                  <div class="m_box">
+                                  	<i></i>
+                                  	<div class="left">
+                                  		<div class="date">Sun Oct 05 2014</div>
+                                  		<div class="txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, neque.</div>
+                                  	</div>
+                                  	<div class="right">
+                                  		<img src="./pic/tu1.png" alt="">
+                                  	</div>
+                                  	<div class="clear"></div>
+                                  </div>
+		        	   	  		</a>
+		        	   	  	</li>
+		        	   	  	<li data-date="2010">
+		        	   	  		<a href="#" >
+                                  <div class="m_box">
+                                  	<i></i>
+                                  	<div class="left">
+                                  		<div class="date">Sun Oct 05 2014</div>
+                                  		<div class="txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, neque.</div>
+                                  	</div>
+                                  	<div class="right">
+                                  		<img src="./pic/tu1.png" alt="">
+                                  	</div>
+                                  	<div class="clear"></div>
+                                  </div>
+		        	   	  		</a>
+		        	   	  	</li>
+		        	   	  	<li data-date="2009">
+		        	   	  		<a href="#" >
+                                  <div class="m_box">
+                                  	<i></i>
+                                  	<div class="left">
+                                  		<div class="date">Sun Oct 05 2014</div>
+                                  		<div class="txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, neque.</div>
+                                  	</div>
+                                  	<div class="right">
+                                  		<img src="./pic/tu1.png" alt="">
+                                  	</div>
+                                  	<div class="clear"></div>
+                                  </div>
+		        	   	  		</a>
+		        	   	  	</li>
+		        	   	  	<li data-date="2008">
+		        	   	  		<a href="#" >
                                   <div class="m_box">
                                   	<i></i>
                                   	<div class="left">
@@ -151,7 +243,7 @@
 
 
 			<div class="clear"></div>
-			<div class="footer">
+			<div class="footer position-static">
 			    <div class="brand"></div>
 			    <div class="footer-info">
 					<div class="footer-info-link">
