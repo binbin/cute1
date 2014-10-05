@@ -4,6 +4,29 @@
 @import "compass/typography/links/unstyled-link";
 /*@import "compass/utilities/general/clearfix";*/
 
+@mixin menu_icon_setting{
+  li{
+      .i-HDG{background:url("../images/bg-menu-HDG.png") no-repeat scroll 10px 5px transparent;}
+      .i-conce{background:url("../images/bg-menu-conce.png") no-repeat scroll 10px 5px transparent;}
+      .i-cul{background:url("../images/bg-menu-cul.png") no-repeat scroll 10px 5px transparent;}
+      .i-markets{background:url("../images/bg-menu-markets.png") no-repeat scroll 10px 5px transparent;}
+      .i-obj{background:url("../images/bg-menu-obj.png") no-repeat scroll 10px 5px transparent;}
+      .i-orga{background:url("../images/bg-menu-orga.png") no-repeat scroll 10px 5px transparent;}
+      .i-organization{background:url("../images/bg-menu-organization.png") no-repeat scroll 10px 5px transparent;}
+      .i-techn{background:url("../images/bg-menu-techn.png") no-repeat scroll 10px 5px transparent;}
+    }
+    li:hover{
+      .i-HDG{background:url("../images/bg-menu-orga.png") no-repeat scroll 10px 5px transparent;}
+      .i-conce{background:url("../images/bg-menu-conce.png") no-repeat scroll 10px 5px transparent;}
+      .i-cul{background:url("../images/bg-menu-cul.png") no-repeat scroll 10px 5px transparent;}
+      .i-markets{background:url("../images/bg-menu-markets.png") no-repeat scroll 10px 5px transparent;}
+      .i-obj{background:url("../images/bg-menu-obj.png") no-repeat scroll 10px 5px transparent;}
+      .i-orga{background:url("../images/bg-menu-orga.png") no-repeat scroll 10px 5px transparent;}
+      .i-organization{background:url("../images/bg-menu-organization.png") no-repeat scroll 10px 5px transparent;}
+      .i-techn{background:url("../images/bg-menu-techn.png") no-repeat scroll 10px 5px transparent;}
+    }
+}
+
 .clear{clear:both;height:0px;overflow:hidden;}
 
 
@@ -36,28 +59,7 @@ html,body{
 
 $content-width:960px;
 
-@mixin menu_icon_setting{
-  li{
-      .i-HDG{background:url("../images/bg-menu-HDG.png") no-repeat scroll 10px 5px transparent;}
-      .i-conce{background:url("../images/bg-menu-conce.png") no-repeat scroll 10px 5px transparent;}
-      .i-cul{background:url("../images/bg-menu-cul.png") no-repeat scroll 10px 5px transparent;}
-      .i-markets{background:url("../images/bg-menu-markets.png") no-repeat scroll 10px 5px transparent;}
-      .i-obj{background:url("../images/bg-menu-obj.png") no-repeat scroll 10px 5px transparent;}
-      .i-orga{background:url("../images/bg-menu-orga.png") no-repeat scroll 10px 5px transparent;}
-      .i-organization{background:url("../images/bg-menu-organization.png") no-repeat scroll 10px 5px transparent;}
-      .i-techn{background:url("../images/bg-menu-techn.png") no-repeat scroll 10px 5px transparent;}
-    }
-    li:hover{
-      .i-HDG{background:url("../images/bg-menu-orga.png") no-repeat scroll 10px 5px transparent;}
-      .i-conce{background:url("../images/bg-menu-conce.png") no-repeat scroll 10px 5px transparent;}
-      .i-cul{background:url("../images/bg-menu-cul.png") no-repeat scroll 10px 5px transparent;}
-      .i-markets{background:url("../images/bg-menu-markets.png") no-repeat scroll 10px 5px transparent;}
-      .i-obj{background:url("../images/bg-menu-obj.png") no-repeat scroll 10px 5px transparent;}
-      .i-orga{background:url("../images/bg-menu-orga.png") no-repeat scroll 10px 5px transparent;}
-      .i-organization{background:url("../images/bg-menu-organization.png") no-repeat scroll 10px 5px transparent;}
-      .i-techn{background:url("../images/bg-menu-techn.png") no-repeat scroll 10px 5px transparent;}
-    }
-}
+
 
 @mixin content{
 	width:$content-width;
