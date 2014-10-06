@@ -459,26 +459,72 @@ $content-width:960px;
         }
 
         .searchbox{
-         float:right;
-         margin-right:18px;
-         margin-top: -2px;
-         input{
-          border:none;
-          background:url("../images/bg-searchbox.png") no-repeat scroll 0 0 transparent;
-          height:26px;
-          line-height:26px;
-          width:88px;          
-          padding-left:12px;
-          float:left;
-         }
-         .searchbtn{
-          width:28px;
-          height:26px;
-          border:none;
-          background:url("../images/bg-searchbtn.png") no-repeat scroll 0 0 transparent;
-          float:left;
-          cursor:pointer;
-         }
+                  float:right;
+                  margin-right:18px;
+                  margin-top: -2px;
+                  @include inline-block;
+                  width:128px;
+                  height:26px;
+                  background:url("../images/bg-searchbox.png") no-repeat scroll 0 0 transparent;
+                  span.desc{
+                    padding-left:12px;
+                    width:128px - 12px;
+                    height:26px;
+                    line-height:26px;
+                    @include inline-block;
+                    background:url("../images/bg-searchbtn.png") no-repeat scroll right 0 transparent;
+                    color:#999;
+                    cursor:pointer;
+                  }
+                  position:relative;
+                  ul{
+                    display:none;
+                    position:absolute;
+                    top:26px;
+                    left:2px;
+                    border:{
+                     left:1px solid #ccc;
+                     right:1px solid #ccc;
+                     bottom:1px solid #ccc;
+                    };
+                    background:#fff;
+                    width:122px;
+                    @include border-radius(5px);
+                    li{
+                      @include inline-block;
+                      
+                      line-height:20px;
+                      
+                      color:rgb(243,195,71);
+                      width:122px;
+                      a,span{
+                        padding-left:30px;
+                        width:122px - 30px;
+                        @include inline-block;
+                        text-decoration:none;
+                      }
+                      span{cursor: default;}
+                      a{
+                        cursor: pointer;
+                        color:#666;  
+                      }
+                      a:hover{
+                        color:rgb(243,195,71);
+                        background:#fff;
+                      }
+                      .en,.en:hover{
+                         background:url("../images/icon-en_16.png") no-repeat scroll 8px center transparent;
+                      }
+                      .cn,.cn:hover{
+                         background:url("../images/icon-cn_16.png") no-repeat scroll 8px center transparent;
+                      }
+                    }
+                  }
+        }
+        .searchbox:hover{
+          ul{
+            @include inline-block;
+          }
         }
 	  }
 	}
