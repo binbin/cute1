@@ -423,7 +423,6 @@ $content-width:960px;
             li:hover{
               background:url("../images/bg-menu-item-h.png") no-repeat scroll 0 0 transparent;
               margin-bottom:-6px;
-              margin-top:-2px;
               z-index:999;
               height:34px;
               a,span{
@@ -511,8 +510,103 @@ $content-width:960px;
       }
   }
   .ad1{
-   width:100%
+   width:960px;
+   height:300px;
+   margin:0 auto;
+   position:relative;
 
+   .scrollable{
+      position:relative;
+      overflow:hidden;
+      width: 960px;
+      height:300px;
+      .items{
+         width:20000em;
+         position:absolute;
+         .imgbox{
+           float:left;
+           img{
+              width: 960px;
+              height:300px;
+           }
+           position:relative;
+           .img_desc{
+             width:400px;
+             position:absolute;
+             @include border-radius(5px);
+             right:25px;
+             bottom:25px;
+             @include inline-block;
+             background:url(../images/bg-trans.png) repeat transparent;
+             /*以下为IE6设置PNG透明代码*/
+             _background:none;
+             /*下面的src是相对于html的位置*/
+             _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/bg-trans.png");
+
+             padding:{
+              left:25px;
+              right:25px;
+              top:10px;
+              bottom:10px;
+             }
+             color:#fff;
+             h2{
+               font:{
+                family:Myriad Pro;
+                size:18px;
+               }
+               line-height:24px;
+               word-wrap: break-word;
+               word-break: break-all;
+             }
+             p{
+               font:{
+                family:Myriad Pro;
+                size:16px;
+               }
+               line-height:20px;
+               word-wrap: break-word;
+               word-break: break-all;
+             }
+           }
+           a.img_desc{
+             @include unstyled-link;
+             cursor:pointer;
+             color:#fff;
+           }
+         }
+      }
+      .scrollingHotSpotLeft{
+          position:absolute;
+          top:0;
+          left:0;
+          height:300px;
+          width:60px;
+          background:url("../images/arrow_left.png") no-repeat scroll center center #fff;
+          @include opacity(0.35);
+          z-index:200;
+          cursor:pointer;
+          display:none;
+       }
+       .scrollingHotSpotRight{
+          position:absolute;
+          top:0;
+          right:0;
+          height:300px;
+          width:60px;
+          background:url("../images/arrow_right.png") no-repeat scroll center center #fff;
+          @include opacity(0.35); 
+          z-index:200;
+          cursor:pointer;
+          display:none;
+       }
+   }
+   .scrollable:hover{
+     .scrollingHotSpotLeft,.scrollingHotSpotRight{
+       @include inline-block;
+     }
+   }
+   
   }
   .ad2{
    padding-left:10px;
