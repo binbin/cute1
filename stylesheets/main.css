@@ -1020,7 +1020,7 @@ html, body {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  right: 25px;
+  right: 0px;
   bottom: 25px;
   display: inline-block;
   vertical-align: middle;

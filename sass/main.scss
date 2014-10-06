@@ -534,7 +534,7 @@ $content-width:960px;
              width:400px;
              position:absolute;
              @include border-radius(5px);
-             right:25px;
+             right:0px;
              bottom:25px;
              @include inline-block;
              background:url(../images/bg-trans.png) repeat transparent;
