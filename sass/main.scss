@@ -522,7 +522,7 @@ $content-width:960px;
                   }
                   overflow:hidden;
                   @include transition-property(height);
-                  @include transition-duration(1s);
+                  @include transition-duration(0.3s);
         }
         .searchbox:hover{
           height:26px + 40px +2px;
