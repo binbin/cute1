@@ -352,6 +352,7 @@ $content-width:960px;
 	    left:0;
 	  }
 	  .nav{
+      position:relative;
 	    color:#fff;
 	    $space:7px;
 	    margin-left:125px - $space;
@@ -459,9 +460,9 @@ $content-width:960px;
         }
 
         .searchbox{
-                  float:right;
-                  margin-right:18px;
-                  margin-top: -2px;
+                  position:absolute;
+                  right:18px;
+                  top: 2px;
                   @include inline-block;
                   width:128px;
                   height:26px;
@@ -476,9 +477,8 @@ $content-width:960px;
                     color:#999;
                     cursor:pointer;
                   }
-                  position:relative;
                   ul{
-                    display:none;
+                    /*display:none;*/
                     position:absolute;
                     top:26px;
                     left:2px;
@@ -520,10 +520,14 @@ $content-width:960px;
                       }
                     }
                   }
+                  overflow:hidden;
+                  @include transition-property(height);
+                  @include transition-duration(1s);
         }
         .searchbox:hover{
+          height:26px + 40px +2px;
           ul{
-            @include inline-block;
+            /*@include inline-block;*/
           }
         }
 	  }
