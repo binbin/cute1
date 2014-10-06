@@ -1059,6 +1059,7 @@ html, body {
   color: inherit;
   text-decoration: inherit;
   cursor: inherit;
+  text-decoration: none;
   cursor: pointer;
   color: #fff;
 }
@@ -1066,7 +1067,7 @@ html, body {
 .content .ad1 .scrollable .items .imgbox a.img_desc:active, .content .ad1 .scrollable .items .imgbox a.img_desc:focus {
   outline: none;
 }
-/* line 579, ../sass/main.scss */
+/* line 580, ../sass/main.scss */
 .content .ad1 .scrollable .scrollingHotSpotLeft {
   position: absolute;
   top: 0;
@@ -1080,7 +1081,7 @@ html, body {
   cursor: pointer;
   display: none;
 }
-/* line 591, ../sass/main.scss */
+/* line 592, ../sass/main.scss */
 .content .ad1 .scrollable .scrollingHotSpotRight {
   position: absolute;
   top: 0;
@@ -1094,7 +1095,7 @@ html, body {
   cursor: pointer;
   display: none;
 }
-/* line 605, ../sass/main.scss */
+/* line 606, ../sass/main.scss */
 .content .ad1 .scrollable:hover .scrollingHotSpotLeft, .content .ad1 .scrollable:hover .scrollingHotSpotRight {
   display: inline-block;
   vertical-align: middle;
@@ -1102,11 +1103,11 @@ html, body {
   *zoom: 1;
   *display: inline;
 }
-/* line 611, ../sass/main.scss */
+/* line 612, ../sass/main.scss */
 .content .ad2 {
   padding-left: 10px;
 }
-/* line 615, ../sass/main.scss */
+/* line 616, ../sass/main.scss */
 .content .ad3 li {
   display: inline-block;
   vertical-align: middle;
@@ -1114,74 +1115,74 @@ html, body {
   *zoom: 1;
   *display: inline;
 }
-/* line 618, ../sass/main.scss */
+/* line 619, ../sass/main.scss */
 .content .ad3 .fix_ad3_right {
   padding-right: 3px;
 }
-/* line 622, ../sass/main.scss */
+/* line 623, ../sass/main.scss */
 .content .ad4 {
   padding-left: 10px;
 }
-/* line 625, ../sass/main.scss */
+/* line 626, ../sass/main.scss */
 .content .ad5 {
   width: 450px;
 }
-/* line 627, ../sass/main.scss */
+/* line 628, ../sass/main.scss */
 .content .ad5 .artical_listbox li a {
   width: 340px;
 }
-/* line 629, ../sass/main.scss */
+/* line 630, ../sass/main.scss */
 .content .ad6 {
   padding-top: 14px;
   padding-left: 40px;
 }
-/* line 634, ../sass/main.scss */
+/* line 635, ../sass/main.scss */
 .content .ad6 .tagal {
   width: 200px;
   height: 96px;
   background: url("../images/bg-tagal.png") no-repeat scroll 0 0 transparent;
 }
-/* line 639, ../sass/main.scss */
+/* line 640, ../sass/main.scss */
 .content .ad6 .tagal_title {
   font-size: 15px;
   line-height: 30px;
 }
-/* line 644, ../sass/main.scss */
+/* line 645, ../sass/main.scss */
 .content .ad7 {
   padding-top: 50px;
   padding-left: 5px;
   padding-bottom: 20px;
 }
-/* line 652, ../sass/main.scss */
+/* line 653, ../sass/main.scss */
 .content .sub_page_imgbox img {
   /*width:580px;*/
   width: 100%;
   height: auto;
 }
-/* line 654, ../sass/main.scss */
+/* line 655, ../sass/main.scss */
 .content .sub_page_content {
   padding-left: 10px;
   padding-bottom: 20px;
 }
-/* line 659, ../sass/main.scss */
+/* line 660, ../sass/main.scss */
 .content .sub_page_content .sub_page_content_title {
   font-size: 18px;
   font-weight: bold;
   padding-top: 20px;
   padding-bottom: 20px;
 }
-/* line 669, ../sass/main.scss */
+/* line 670, ../sass/main.scss */
 .content .sub_page_content .sub_page_content_content {
   padding: 0;
   margin: 0;
   position: relative;
   line-height: 20px;
 }
-/* line 676, ../sass/main.scss */
+/* line 677, ../sass/main.scss */
 .content .news {
   padding-bottom: 20px;
 }
-/* line 678, ../sass/main.scss */
+/* line 679, ../sass/main.scss */
 .content .news .news_title {
   font-size: 18px;
   font-weight: bold;
@@ -1193,54 +1194,54 @@ html, body {
   word-wrap: break-word;
   word-break: break-all;
 }
-/* line 693, ../sass/main.scss */
+/* line 694, ../sass/main.scss */
 .content .news .news_date {
   color: #666;
   line-height: 20px;
 }
-/* line 698, ../sass/main.scss */
+/* line 699, ../sass/main.scss */
 .content .news .news_content .news_imgbox {
   float: left;
   padding: 2px;
   border: 1px solid #666;
 }
-/* line 703, ../sass/main.scss */
+/* line 704, ../sass/main.scss */
 .content .news .news_content .img_desc {
   text-align: right;
   color: #666;
   font-size: 10px;
   line-height: 16px;
 }
-/* line 712, ../sass/main.scss */
+/* line 713, ../sass/main.scss */
 .content .search_page_box .maintitle {
   color: #10387e;
   font-size: 16px;
   line-height: 30px;
 }
-/* line 717, ../sass/main.scss */
+/* line 718, ../sass/main.scss */
 .content .search_page_box .desc {
   line-height: 16px;
   margin-bottom: 18px;
   margin-top: 10px;
 }
-/* line 722, ../sass/main.scss */
+/* line 723, ../sass/main.scss */
 .content .search_page_box .search_in_box {
   background: #e3eaf0;
   padding-left: 12px;
   padding-top: 5px;
   padding-bottom: 5px;
 }
-/* line 729, ../sass/main.scss */
+/* line 730, ../sass/main.scss */
 .content .search_page_box .search_in_box .subtitle {
   color: #10387e;
   font-size: 14px;
   line-height: 26px;
 }
-/* line 734, ../sass/main.scss */
+/* line 735, ../sass/main.scss */
 .content .search_page_box .search_in_box .inbox {
   height: 40px;
 }
-/* line 737, ../sass/main.scss */
+/* line 738, ../sass/main.scss */
 .content .search_page_box .search_in_box input {
   border: none;
   width: 350px;
@@ -1252,7 +1253,7 @@ html, body {
   padding-right: 10px;
   vertical-align: middle;
 }
-/* line 750, ../sass/main.scss */
+/* line 751, ../sass/main.scss */
 .content .search_page_box .search_in_box button {
   border: none;
   background: url("../images/bg-searchbtn1.png") no-repeat scroll 0 0 transparent;
@@ -1262,50 +1263,50 @@ html, body {
   vertical-align: middle;
   margin-left: 10px;
 }
-/* line 760, ../sass/main.scss */
+/* line 761, ../sass/main.scss */
 .content .search_page_box .input_desc {
   color: #999;
   line-height: 30px;
 }
-/* line 765, ../sass/main.scss */
+/* line 766, ../sass/main.scss */
 .content .search_result_box {
   padding-top: 20px;
 }
-/* line 767, ../sass/main.scss */
+/* line 768, ../sass/main.scss */
 .content .search_result_box .search_result_title {
   font-size: 16px;
   font-weight: bold;
   line-height: 30px;
   border-bottom: 2px solid #999;
 }
-/* line 776, ../sass/main.scss */
+/* line 777, ../sass/main.scss */
 .content .search_result_box .search_result_list li {
   padding-top: 12px;
   font-size: 14px;
 }
-/* line 779, ../sass/main.scss */
+/* line 780, ../sass/main.scss */
 .content .search_result_box .search_result_list li a {
   color: #10387e;
   text-decoration: none;
   line-height: 24px;
 }
-/* line 784, ../sass/main.scss */
+/* line 785, ../sass/main.scss */
 .content .search_result_box .search_result_list li p {
   line-height: 16px;
   word-wrap: break-word;
   word-break: break-all;
 }
-/* line 789, ../sass/main.scss */
+/* line 790, ../sass/main.scss */
 .content .search_result_box .search_result_list li em {
   color: #d71345;
 }
-/* line 795, ../sass/main.scss */
+/* line 796, ../sass/main.scss */
 .content .concat_page_box {
   padding-top: 48px;
   padding-left: 20px;
   padding-right: 20px;
 }
-/* line 802, ../sass/main.scss */
+/* line 803, ../sass/main.scss */
 .content .concat_message_box {
   padding-top: 6px;
   padding-bottom: 10px;
@@ -1316,16 +1317,16 @@ html, body {
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 809, ../sass/main.scss */
+/* line 810, ../sass/main.scss */
 .content .concat_message_box .left {
   width: 220px;
   float: left;
 }
-/* line 813, ../sass/main.scss */
+/* line 814, ../sass/main.scss */
 .content .concat_message_box .right {
   margin-left: 240px;
 }
-/* line 818, ../sass/main.scss */
+/* line 819, ../sass/main.scss */
 .content .concat_message_box h2 {
   font-size: 12px;
   font-weight: bold;
@@ -1333,29 +1334,29 @@ html, body {
   line-height: 24px;
   margin-bottom: 5px;
 }
-/* line 827, ../sass/main.scss */
+/* line 828, ../sass/main.scss */
 .content .concat_message_box p {
   line-height: 16px;
   padding-top: 2px;
   padding-bottom: 2px;
 }
-/* line 831, ../sass/main.scss */
+/* line 832, ../sass/main.scss */
 .content .concat_message_box p a {
   color: #10387e;
   text-decoration: none;
 }
-/* line 837, ../sass/main.scss */
+/* line 838, ../sass/main.scss */
 .content .map_box {
   padding-top: 30px;
 }
-/* line 839, ../sass/main.scss */
+/* line 840, ../sass/main.scss */
 .content .map_box .left {
   width: 420px;
   float: left;
   height: 360px;
   background: url("../images/tagalworld_cn.png") no-repeat scroll 0 16px transparent;
 }
-/* line 844, ../sass/main.scss */
+/* line 845, ../sass/main.scss */
 .content .map_box .left p {
   background: url("../images/bg_contact.png") repeat-y scroll 0 0 transparent;
   width: 300px;
@@ -1363,27 +1364,27 @@ html, body {
   padding-right: 21px;
   line-height: 16px;
 }
-/* line 854, ../sass/main.scss */
+/* line 855, ../sass/main.scss */
 .content .map_box .right {
   padding-top: 120px;
 }
-/* line 856, ../sass/main.scss */
+/* line 857, ../sass/main.scss */
 .content .map_box .right img {
   width: 280px;
   height: auto;
 }
-/* line 862, ../sass/main.scss */
+/* line 863, ../sass/main.scss */
 .content .mem_wrap {
   padding-top: 40px;
   padding-left: 20px;
 }
-/* line 867, ../sass/main.scss */
+/* line 868, ../sass/main.scss */
 .content .mem_wrap ul.labels {
   z-index: 999;
   background: #fff;
   padding-bottom: 20px;
 }
-/* line 871, ../sass/main.scss */
+/* line 872, ../sass/main.scss */
 .content .mem_wrap ul.labels li {
   display: inline-block;
   vertical-align: middle;
@@ -1392,7 +1393,7 @@ html, body {
   *display: inline;
   padding-right: 5px;
 }
-/* line 874, ../sass/main.scss */
+/* line 875, ../sass/main.scss */
 .content .mem_wrap ul.labels li a {
   color: inherit;
   text-decoration: inherit;
@@ -1418,28 +1419,28 @@ html, body {
 .content .mem_wrap ul.labels li a:active, .content .mem_wrap ul.labels li a:focus {
   outline: none;
 }
-/* line 891, ../sass/main.scss */
+/* line 892, ../sass/main.scss */
 .content .mem_wrap ul.labels li a.highlight {
   color: #ffe57e;
   border-bottom: 3px solid #ffe57e;
   text-align: center;
   width: 60px;
 }
-/* line 899, ../sass/main.scss */
+/* line 900, ../sass/main.scss */
 .content .mem_wrap ul.lebelsoverflow {
   /*@include box-shadow(red 2px 2px 10px);*/
   position: fixed;
   top: 0;
   border-bottom: solid 1px #999;
 }
-/* line 905, ../sass/main.scss */
+/* line 906, ../sass/main.scss */
 .content .mem_wrap .mem_box {
   background: url("../images/bg-mem-line.png") repeat-y scroll 20px 0 transparent;
   /*top:20px;*/
   margin-bottom: 20px;
   max-width: 660px;
 }
-/* line 914, ../sass/main.scss */
+/* line 915, ../sass/main.scss */
 .content .mem_wrap .mem_box ul.mems li a {
   display: inline-block;
   vertical-align: middle;
@@ -1454,7 +1455,7 @@ html, body {
   word-wrap: break-word;
   word-break: break-all;
 }
-/* line 925, ../sass/main.scss */
+/* line 926, ../sass/main.scss */
 .content .mem_wrap .mem_box ul.mems li a .m_box {
   position: relative;
   -moz-border-radius: 3px;
@@ -1463,7 +1464,7 @@ html, body {
   border: 1px solid #ebebeb;
   background: whitesmoke;
 }
-/* line 927, ../sass/main.scss */
+/* line 928, ../sass/main.scss */
 .content .mem_wrap .mem_box ul.mems li a .m_box i {
   position: absolute;
   left: -9px;
@@ -1478,14 +1479,14 @@ html, body {
   _border-color: #000000 #ffcb11 #000000 #000000;
   _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
 }
-/* line 946, ../sass/main.scss */
+/* line 947, ../sass/main.scss */
 .content .mem_wrap .mem_box ul.mems li a .m_box .left {
   float: left;
   width: 138px;
   padding-top: 10px;
   padding-left: 5px;
 }
-/* line 953, ../sass/main.scss */
+/* line 954, ../sass/main.scss */
 .content .mem_wrap .mem_box ul.mems li a .m_box .left .date {
   color: #333;
   background: #fff;
@@ -1493,7 +1494,7 @@ html, body {
   padding-left: 5px;
   padding-right: 5px;
 }
-/* line 962, ../sass/main.scss */
+/* line 963, ../sass/main.scss */
 .content .mem_wrap .mem_box ul.mems li a .m_box .left .txt {
   line-height: 16px;
   word-wrap: break-word;
@@ -1501,11 +1502,11 @@ html, body {
   padding-top: 5px;
   padding-bottom: 5px;
 }
-/* line 972, ../sass/main.scss */
+/* line 973, ../sass/main.scss */
 .content .mem_wrap .mem_box ul.mems li a .m_box .right {
   margin-left: 158px;
 }
-/* line 974, ../sass/main.scss */
+/* line 975, ../sass/main.scss */
 .content .mem_wrap .mem_box ul.mems li a .m_box .right .txt {
   line-height: 16px;
   word-wrap: break-word;
@@ -1513,25 +1514,25 @@ html, body {
   padding-top: 8px;
   padding-right: 5px;
 }
-/* line 982, ../sass/main.scss */
+/* line 983, ../sass/main.scss */
 .content .mem_wrap .mem_box ul.mems li a .m_box .right .txt img {
   width: 150px;
   height: auto;
 }
-/* line 990, ../sass/main.scss */
+/* line 991, ../sass/main.scss */
 .content .mem_wrap .mem_box ul.mems li a.highlight {
   background: url("../images/icon-circle-h.png") no-repeat scroll 15px 0 transparent;
 }
-/* line 992, ../sass/main.scss */
+/* line 993, ../sass/main.scss */
 .content .mem_wrap .mem_box ul.mems li a.highlight .m_box {
   border: 1px solid #ffcb11;
 }
-/* line 993, ../sass/main.scss */
+/* line 994, ../sass/main.scss */
 .content .mem_wrap .mem_box ul.mems li a.highlight .m_box i {
   display: inline;
 }
 
-/* line 1000, ../sass/main.scss */
+/* line 1001, ../sass/main.scss */
 .footer {
   position: absolute;
   bottom: 0;
@@ -1543,17 +1544,17 @@ html, body {
   background: url("../images/bg-footer.png") no-repeat scroll 0 0 #fff;
   margin: 0 auto;
 }
-/* line 1010, ../sass/main.scss */
+/* line 1011, ../sass/main.scss */
 .footer a {
   color: #10387e;
   text-decoration: none;
 }
-/* line 1014, ../sass/main.scss */
+/* line 1015, ../sass/main.scss */
 .footer a:hover {
   text-decoration: underline;
   color: #f4b613;
 }
-/* line 1018, ../sass/main.scss */
+/* line 1019, ../sass/main.scss */
 .footer .footer-info {
   display: inline-block;
   vertical-align: middle;
@@ -1562,16 +1563,16 @@ html, body {
   *display: inline;
   width: 450px;
 }
-/* line 1022, ../sass/main.scss */
+/* line 1023, ../sass/main.scss */
 .footer .footer-info-link {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-/* line 1028, ../sass/main.scss */
+/* line 1029, ../sass/main.scss */
 .footer .footer-info-icp {
   padding-bottom: 10px;
 }
-/* line 1033, ../sass/main.scss */
+/* line 1034, ../sass/main.scss */
 .footer div.brand {
   float: right;
   background: url("../images/bg-brand.png") no-repeat scroll 0 0 #fff;

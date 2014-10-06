@@ -571,6 +571,7 @@ $content-width:960px;
            }
            a.img_desc{
              @include unstyled-link;
+             text-decoration:none;
              cursor:pointer;
              color:#fff;
            }
