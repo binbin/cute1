@@ -16,7 +16,7 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "1.9.1",
+    "jquery": "1.11.1",
     "jquerytools": "jquerytools/jquerytools#~1.2.7"
   }
 }

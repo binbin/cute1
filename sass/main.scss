@@ -961,7 +961,7 @@ $content-width:960px;
          }
          max-width: 660px; 
          ul.mems{
-           li{
+           li{ 
               a{
                 @include inline-block;
                 padding:{

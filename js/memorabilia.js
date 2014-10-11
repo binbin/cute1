@@ -25,6 +25,7 @@ $(function(){
 		allMems.removeClass('highlight')
 		var index=$(this).parent().index()
 		mems[index].addClass('highlight')
+
 		// $(window).scrollTop(hs[index] - 95)
 		$('body, html').animate({scrollTop: hs[index] - 95}, 300);
 	})
@@ -45,5 +46,20 @@ $(function(){
        	  })
        	 labels.removeClass('lebelsoverflow')
        }
+	}).scroll(function(){
+		var top=$(window).scrollTop()
+		// console.log(top)
+		for(var i=0;i<mems.length;i++){
+           if(((i!==mems.length-1 && top<hs[i+1]-225) || i===mems.length-1)  && top>=hs[i]-225){
+           	  allMems.removeClass('highlight')
+           	  mems[i].addClass('highlight')
+           	  $('.labels li a').removeClass('highlight')
+              $('.labels li a').eq(i).addClass('highlight')
+           }
+           if(i===0&top<50){
+           	  allMems.removeClass('highlight')
+           	  $('.labels li a').removeClass('highlight')
+           }
+		}
 	})
 })
