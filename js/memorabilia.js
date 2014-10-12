@@ -28,6 +28,7 @@ $(function(){
 
 		// $(window).scrollTop(hs[index] - 95)
 		$('body, html').animate({scrollTop: hs[index] - 95}, 300);
+		// $('body, html').animate({scrollTop: hs[index] - 125}, 300);
 	})
 	// console.log(years)
 	var labels=$('.labels')
@@ -50,7 +51,8 @@ $(function(){
 		var top=$(window).scrollTop()
 		// console.log(top)
 		for(var i=0;i<mems.length;i++){
-           if(((i!==mems.length-1 && top<hs[i+1]-225) || i===mems.length-1)  && top>=hs[i]-225){
+			// if(((i!==mems.length-1 && top<hs[i+1]-225) || i===mems.length-1)  && top>=hs[i]-225){
+           if(((i!==mems.length-1 && top<hs[i+1]-95) || i===mems.length-1)  && top>=hs[i]-95){
            	  allMems.removeClass('highlight')
            	  mems[i].addClass('highlight')
            	  $('.labels li a').removeClass('highlight')
