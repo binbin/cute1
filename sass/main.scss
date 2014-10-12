@@ -2,7 +2,12 @@
 @import "compass/reset";
 @import "compass/css3";
 @import "compass/typography/links/unstyled-link";
-/*@import "compass/utilities/general/clearfix";*/
+
+/*
+@mixin bd_radius($r){
+    behavior: url("/stylesheets/PIE/PIE.htc");
+    @include border-radius($r);
+}*/
 
 @mixin menu_icon_setting{
   li{
@@ -1045,6 +1050,33 @@ $content-width:960px;
               }
            }
          }
+      }
+    }
+    .sitemap{
+      @include inline-block;
+      width:680px;
+      padding:{
+        top:30px;
+        left:20px;
+      }
+      h1{
+        font:{
+         size:12px;
+         weight:bold;
+        }
+        border-bottom:1px solid #999;
+        line-height: 20px;
+        padding-left: 50px;
+      }
+      div{
+        padding:{
+          top:20px;
+          left:10px;
+          bottom:30px;
+        }
+        img{
+
+        }
       }
     }
 }
