@@ -530,7 +530,7 @@ $content-width:960px;
                   @include transition-duration(0.3s);
         }
         .searchbox:hover{
-          height:26px + 40px +2px;
+          height:26px + 40px +2px + 40px;
           ul{
             /*@include inline-block;*/
           }
