@@ -8,6 +8,6 @@ $(function(){
 								next_show_always:false,
 								prev_show_always:false,
 								callback:$.noop,
-								prev_text:"上一页",
-								next_text:"下一页"})
+								prev_text:p.data('prevtext'),
+								next_text:p.data('nexttext')})
 })
