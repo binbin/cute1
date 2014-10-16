@@ -3,12 +3,16 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 	<title>news</title>
+	<link rel="stylesheet" type="text/css" href="./resources/jquery.pagination/pagination.css">
 	<link rel="stylesheet" type="text/css" href="./stylesheets/main.css">
 	<!--[if lte IE 8]> 
 	<link href="./stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" /> 
 	<![endif]-->
 	<link rel="icon" href="./favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <script type="text/javascript" src="./resources/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="./resources/jquery.pagination/jquery.pagination.js"></script>
+	<script type="text/javascript" src="./js/page.js"></script>
 </head>
 <body>
 	<div id="container">
@@ -145,7 +149,9 @@
 	        	    	</div>
 	        	    	<div class="clear"></div>
 	        	    </div>
-	        		
+	        	    <!--current page是从0开始记数-->
+	        	    <!--link中的__id__会被数字替换-->
+	        		<div data-totalpage="200" data-currentpage="4" data-link="http://www.sina.com.cn/__id__" id="pager" class="page"></div>
 	        	</div>
 	        	
 	        </div>
