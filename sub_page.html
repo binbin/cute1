@@ -9,6 +9,8 @@
 	<![endif]-->
 	<link rel="icon" href="./favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <script type="text/javascript" src="./resources/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="./js/menu_list.js"></script>
 </head>
 <body>
 	<div id="container">
@@ -63,9 +65,34 @@
 	        			<div class="panel panel164">
 							<div class="panelcontentbox margin-top10">
 								<ul class="list">
-									<li><a href="#" class="list">Orgnization</a></li>
-									<li><a href="#" class="globe">HDG line &gt;</a></li>
-									<li><a href="#" class="trolley">Markets &gt;</a></li>
+									<li>
+										<span class="current">
+											<a class="list current" href="javascript:void(0)">Orgnization</a>
+											<ul>
+												<li><a href="#">Lorem ipsum.</a></li>
+												<li><a href="#">Lorem ipsum.</a></li>
+												<li><a class="current" href="#">Lorem ipsum.</a></li>
+											</ul>
+									    </span>
+								    </li>
+									<li>
+										<span>
+											<a href="javascript:void(0)" class="globe">HDG line &gt;</a>
+											<ul>
+												<li><a href="#">Lorem ipsum.</a></li>
+												<li><a href="#">Lorem ipsum.</a></li>
+											</ul>
+										</span>
+									</li>
+									<li>
+										<span>
+											<a href="javascript:void(0)" class="trolley">HDG line &gt;</a>
+											<ul>
+												<li><a href="#">Lorem ipsum.</a></li>
+												<li><a href="#">Lorem ipsum.</a></li>
+											</ul>
+										</span>
+									</li>
 									<li><a href="#" class="heart">Technical Service</a></li>
 									<li><a href="#" class="terminal">Corporate Culture</a></li>
 									<li><a href="#" class="bookmark">Corporate Objective</a></li>
