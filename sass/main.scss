@@ -418,6 +418,9 @@ $content-width:960px;
           background:rgb(8,64,134);
           color:#fff;
         }
+        span.item.current{
+          a{color:#fff;}
+        }
         span.item{
           position:relative;
           ul,li{
@@ -442,9 +445,50 @@ $content-width:960px;
               position: relative;
               text-align: left;
               height:28px;
-              background:url("../images/bg-menu-item.png") no-repeat scroll 0 0 transparent;
-              
-              a,span{
+              display: block;
+              .menu_border_fixed{
+                position:absolute;
+
+               /* @include inline-block;*/
+                display: block;
+
+                width:100%;
+                height:28px;
+                left:0;
+                top:0;
+                padding:0;
+                span{
+                  padding:0;
+                }
+              }
+              .left_fixed{
+                background:url("../images/bg-menu-item_l.png") no-repeat scroll 0 0 transparent;
+                @include inline-block;
+                width:5px;
+                height:28px;
+                float:left;
+
+              }
+              .right_fixed{
+                background:url("../images/bg-menu-item_r.png") no-repeat scroll right 0 transparent;
+                @include inline-block;
+                width:5px;
+                height:28px;
+                float:right;
+              }
+              .center_fixed{
+                display:block;
+                height:28px;
+                background:url("../images/bg-menu-item_c.png") repeat-x scroll 0 0 transparent;
+                margin-left: 5px;
+                margin-right: 5px;
+              }
+              span{
+               /*@include inline-block;*/
+               display: block;
+              }
+              a{
+               position:relative;
                color:#222;
                text-decoration:none;
                @include inline-block;
@@ -452,20 +496,37 @@ $content-width:960px;
                line-height:28px;
                padding:{
                 left:38px;
+                right:10px;
                }
-               width:100px;
+               /*width:100px;*/
+               white-space: nowrap;
               }
             }
             li:hover{
-              background:url("../images/bg-menu-item-h.png") no-repeat scroll 0 0 transparent;
               margin-bottom:-6px;
               z-index:999;
               height:34px;
+              .menu_border_fixed{
+                height:34px;
+              }
+              .left_fixed{
+                height:34px;
+                background:url("../images/bg-menu-item-h_l.png") no-repeat scroll 0 0 transparent;
+              }
+              .right_fixed{
+                height:34px;
+                background:url("../images/bg-menu-item-h_r.png") no-repeat scroll right 0 transparent;
+              }
+              .center_fixed{
+                height:34px;
+                background:url("../images/bg-menu-item-h_c.png") repeat-x scroll 0 0 transparent;
+              }
               a,span{
                color:rgb(243,195,71);
               }
               ul.m2_box{@include inline-block;}
             }
+
             ul.m2_box{
               /*图标*/
               @include menu_icon_setting;
@@ -482,7 +543,7 @@ $content-width:960px;
               }
               position:absolute;
               display:none;
-              left:138px;
+              left:100%;
               top:0;
             }
           }
