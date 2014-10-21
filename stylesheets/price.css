@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* CSS Document */
+#list-table-container{ width:566px; border:1px #CCC solid;}
+
+.table-item{margin-bottom:25px;}
+.table-item .header{
+background:url(../images/header-line.jpg) left repeat-y;
+font-size:17px; font-weight:bold; color:#FFFFFF;
+height:34px;line-height:34px; text-align:center; padding-left:10px;
+}
+.table-item .big-header{
+height:65px;line-height:65px; text-align:center; padding-left:0px;
+}
+.table-item .table_content{width:100%;}
+.table-item .table_content h3{
+padding:2px 10px 2px 10px; margin:0px; color:#363650; font-size:15px;
+}
+.table-item .table_content .sub-item{margin-bottom:25px}
+.table-item .table_content table{
+border:1px #A7A7A7 solid; border-top:0px; border-right:0px;
+color:#363650; font-size:15px;
+display: table;
+border-collapse: separate;
+}
+.table-item .table_content table thead tr th{
+padding:3px 0px 2px 0px; background-color:#D3E49E;
+border:1px #A7A7A7 solid; border-left:0px; border-bottom:0px;
+font-weight: bold;
+}
+.table-item .table_content table thead tr th.padding-10{padding-left:10px;}
+.table-item .table_content table tbody tr td{
+padding:3px 10px 3px 10px; border:1px #A7A7A7 solid; 
+border-left:0px; border-bottom:0px; text-align:right;
+}
+.table-item .table_content table tbody tr.deep td{
+background:#8EB8E2
+}
+.table-item .table_content .detail{
+color:#666666; font-size:14px; display:block; padding:2px 2px 2px 10px;
+}
+.align-left{text-align:left}
+.table-item .footer_table-item{ padding:3px 10px 3px 10px;}
+.font-bold{font-weight:bold; color:#333333}
+.bottom-line{ border-bottom:2px #2D5382 solid; margin-bottom:10px;}
