@@ -26,8 +26,8 @@ var total = 0;
 
 //设置基本价格
 function setBaseprice() {
-	var basePrice = $("basePrice");
-	item1_1 = parseInt(basePrice.value);
+	var basePrice = $("#basePrice");
+	item1_1 = parseInt(basePrice.val(),10);
 	var price1_1 = document.getElementById("price1_1");
 	price1_1.innerText = item1_1;
 	getSum();
@@ -43,19 +43,19 @@ function item2_1Select(select) {
 }
 
 function item2_1_1Select(select) {
-	item2_1_1 = parseInt(select.value);
+	item2_1_1 = parseInt(select.value,10);
 	var price2_1_1 = document.getElementById("price2_1_1");
 	price2_1_1.innerText = item2_1_1;
 	getSum();
 }
 function item2_1_2Select(select) {
-	item2_1_2 = parseInt(select.value);
+	item2_1_2 = parseInt(select.value,10);
 	var price2_1_2 = document.getElementById("price2_1_2");
 	price2_1_2.innerText = item2_1_2;
 	getSum();
 }
 function item2_1_3Select(select) {
-	item2_1_3 = parseInt(select.value);
+	item2_1_3 = parseInt(select.value,10);
 	var price2_1_3 = document.getElementById("price2_1_3");
 	price2_1_3.innerText = item2_1_3;
 	getSum();
@@ -111,7 +111,7 @@ function item2_3Select(select) {
 
 //选择2.4
 function item2_4_1Select(select) {
-	var coatItem = $("coatItem");
+	var coatItem = $("#coatItem")[0];
 	coatItem.options.length = 0;
 	if(select.value=='0'){
 		item2_4 = parseInt(select.value);
@@ -119,14 +119,22 @@ function item2_4_1Select(select) {
 		price2_4.innerText = item2_4;
 		getSum();
 	}else{
-		new Ajax.Request("getItemByCoat.action?coat=" + select.value, {method:"get", onSuccess:function (transport) {
+		/**2014.10.21**/
+		$.get('getItemByCoat.action',{coat:select.value},function(json){
+			for (var i = 0; i < json.length; i++) {	
+				jsAddItemToSelect(coatItem, json[i].item, json[i].price);
+			}
+			item2_4_2Select(coatItem);
+			getSum();
+		},'json')
+		/*new Ajax.Request("getItemByCoat.action?coat=" + select.value, {method:"get", onSuccess:function (transport) {
 			var json = transport.responseText.evalJSON(true);
 			for (var i = 0; i < json.length; i++) {	
 				jsAddItemToSelect(coatItem, json[i].item, json[i].price);
 			}
 			item2_4_2Select(coatItem);
 			getSum();
-		}});
+		}});*/
 	}
 	
 	
@@ -149,53 +157,83 @@ function item2_5Select(select) {
 //选择2.6
 function item2_6_1Select(select) {
 	//第一个select
-	var layer = $("layer");
+	var layer = $("#layer");
 	//ajax获得值
-	new Ajax.Request("getThickLayer.action?thick=" + select.value + "&layer=" + layer.value, {method:"get", onSuccess:function (transport) {
+
+	/**2014.10.21**/
+	$.get('getThickLayer.action',{thick:select.value,layer:layer.val()},function(data){
+        item2_6 = parseInt(data,10);
+		var price2_6 = $("#price2_6");
+		price2_6.text(item2_6);
+		getSum();
+	},'text')
+	/*new Ajax.Request("getThickLayer.action?thick=" + select.value + "&layer=" + layer.value, {method:"get", onSuccess:function (transport) {
 		item2_6 = parseInt(transport.responseText);
-		var price2_6 = $("price2_6");
+		var price2_6 = $("#price2_6");
 		price2_6.innerText = item2_6;
 		getSum();
-	}});
+	}});*/
 	
 }
 function item2_6_2Select(select) {
 	//第一个select
-	var thick = $("thick2_6");
+	var thick = $("#thick2_6");
 	//ajax获得值
+	/**2014.10.21**/
+	$.get('getThickLayer.action',{thick:thick.val(),layer:select.value},function(data){
+		item2_6 = parseInt(data,10);
+		var price2_6 = $("#price2_6");
+		price2_6.text(item2_6);
+		getSum();
+	},'text')
+	/*
 	new Ajax.Request("getThickLayer.action?thick=" + thick.value + "&layer=" + select.value, {method:"get", onSuccess:function (transport) {
 		item2_6 = parseInt(transport.responseText);
-		var price2_6 = $("price2_6");
+		var price2_6 = $("#price2_6");
 		price2_6.innerText = item2_6;
 		getSum();
 	}});
-	
+	*/
 }
 
 
 //选择2.7
 function item2_7_2Select(select) {
 	//第一个select
-	var thick = $("thick");
+	var thick = $("#thick");
 	//ajax获得值
-	new Ajax.Request("getThickWidth.action?thick=" + thick.value + "&width=" + select.value, {method:"get", onSuccess:function (transport) {
+	/**2014.10.21**/
+	$.get('getThickWidth.action',{thick:thick.val(),width:select.value},function(data){
+		item2_7 = parseInt(data,10);
+		var price2_7 = $("#price2_7");
+		price2_7.text(item2_7);
+		getSum();
+	},'text')
+	/*new Ajax.Request("getThickWidth.action?thick=" + thick.value + "&width=" + select.value, {method:"get", onSuccess:function (transport) {
 		item2_7 = parseInt(transport.responseText);
-		var price2_7 = $("price2_7");
+		var price2_7 = $("#price2_7");
 		price2_7.innerText = item2_7;
 		getSum();
-	}});
+	}});*/
 	
 }
 function item2_7_1Select(select) {
 	//第一个select
-	var width = $("width");
+	var width = $("#width");
 	//ajax获得值
-	new Ajax.Request("getThickWidth.action?thick=" + select.value + "&width=" + width.value, {method:"get", onSuccess:function (transport) {
+	/**2014.10.21**/
+	$.get('getThickWidth.action',{thick:select.value,width:width.val()},function(data){
+        item2_7 = parseInt(data,10);
+		var price2_7 = $("#price2_7");
+		price2_7.text(item2_7);
+		getSum();
+	},'text')
+	/*new Ajax.Request("getThickWidth.action?thick=" + select.value + "&width=" + width.value, {method:"get", onSuccess:function (transport) {
 		item2_7 = parseInt(transport.responseText);
-		var price2_7 = $("price2_7");
+		var price2_7 = $("#price2_7");
 		price2_7.innerText = item2_7;
 		getSum();
-	}});
+	}});*/
 	
 }
 
@@ -217,8 +255,8 @@ function item3_1Select(select) {
 
 //计算总价
 function getSum() {
-	var totalPrice = $("totalPrice");
-	var totalDiv = $('total');
+	var totalPrice = $("#totalPrice")[0];
+	var totalDiv = $('#total')[0];
 	total = item1_1 + item2_1_1+ item2_1_2+ item2_1_3+ item2_1_4+ item2_1_5+ item2_1_6+ item2_1_7+itemn2_3+item2_3+item2_4+item2_5+item2_6+item2_7+item2_8+item3_1+item4_1;
 	totalPrice.innerText = total;
 	totalDiv.innerText = total;
