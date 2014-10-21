@@ -10,8 +10,19 @@
 	<![endif]-->
 	<link rel="icon" href="./favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <script type="text/javascript" src="./resources/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/caculate.js"></script>
+    <script type="text/javascript">
+       $(function(){
+       	  var w=960+(document.documentElement.clientWidth-960)/2
+       	  $('#pop').css('left',w+'px')
+       })
+    </script>
 </head>
 <body>
+	<div id="pop" style="display: block; position: fixed; width: 120px; height: 80px; top: 30px; background: url(http://www.tagal.cn/tagal_web/Images/total.jpg);">
+		<div id="totalPrice" style="POSITION:absolute;TOP:32px;left:50px;">0</div>
+	</div>
 	<div id="container">
 		<div class="content">
 			<div class="navbar">
@@ -973,7 +984,7 @@
 											合计
 										</th>
 										<th class="column1" scope="row">
-											<strong> <span id="total">2515</span> 元/吨 </strong>
+											<strong> <span id="total">0</span> 元/吨 </strong>
 										</th>
 									</tr>
 								</tbody>
