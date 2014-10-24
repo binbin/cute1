@@ -1,0 +1,22 @@
+{
+  "name": "cute1",
+  "version": "0.0.1",
+  "homepage": "https://github.com/binbin/cute1",
+  "authors": [
+    "binbin <binbin5474@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "resources",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "1.11.1",
+    "jquerytools": "jquerytools/jquerytools#~1.2.7"
+  }
+}

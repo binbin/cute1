@@ -1,0 +1,1050 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="cn">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>价格计算</title>
+	<link rel="stylesheet" type="text/css" href="./stylesheets/main.css">
+	<link rel="stylesheet" type="text/css" href="./stylesheets/calculate.css">
+	<!--[if lte IE 8]> 
+	<link href="./stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" /> 
+	<![endif]-->
+	<link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <script type="text/javascript" src="./resources/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/caculate.js"></script>
+    <script type="text/javascript">
+       $(function(){
+       	  var w=960+(document.documentElement.clientWidth-960)/2
+       	  $('#pop').css('left',w+'px')
+       })
+    </script>
+</head>
+<body>
+	<div id="pop" style="display: block; position: fixed; width: 120px; height: 80px; top: 30px; background: url(http://www.tagal.cn/tagal_web/Images/total.jpg);">
+		<div id="totalPrice" style="POSITION:absolute;TOP:32px;left:50px;">0</div>
+	</div>
+	<div id="container">
+		<div class="content">
+			<div class="navbar">
+				<a href="/" class="logo"></a>
+				<div class="nav">
+					<!--searchbox在前面写修复ie6bug-->
+					<div class="searchbox">
+						<span class="desc">
+							Globle site
+						</span>
+						<ul>
+							<li><a href="#" class="cn">中文</a></li>
+							<li><span class="en">English</span></li>
+						</ul>
+					</div>
+
+
+					<span class="current item">
+						Portrait
+						<ul class="m_box">
+							<li>
+								<span href="#" class="i-HDG">
+									5678&nbsp;&nbsp;&nbsp;&nbsp;&gt;&gt;
+									<ul class="m2_box">
+										<li><a href="#" class="i-HDG">87798</a></li>
+										<li><a href="#" class="i-conce">87798</a></li>
+										<li><a href="#" class="i-cul">87798</a></li>
+									</ul>
+								</span>
+							</li>
+							<li class="cu"><a href="#" class="i-conce">87798</a></li>
+							<li><a href="#" class="i-cul">87798</a></li>
+						</ul>
+					</span><span class="sword">|</span><a href="#" class="item">History</a><span class="sword">|</span><a href="#" class="item">Products</a><span class="sword">|</span><a href="#" class="item">News</a><span class="sword">|</span><a href="#" class="item">Career</a><span class="sword">|</span><a href="#" class="item">E-business</a>
+					
+				</div>
+			</div>
+			<div class="navbar2">
+				<div class="nav2">
+					<a href="#" class="current">Home</a>
+					<a href="#">Concat</a>
+					<a href="#">Glossary</a>
+					<a href="#">Sitmap</a>
+					<a href="#">Search</a>
+				</div>
+			</div>
+	        <div class="wrap">
+	        	<div class="grid grid-9">
+	        		<div class="ad7">
+	        			<div class="panel panel164">
+							<div class="panelcontentbox margin-top10">
+								<ul class="list">
+									<li><a href="#" class="career">Career</a></li>
+									<li><a href="#" class="investor">Investors</a></li>
+									<li><a href="#" class="tagal">Tagal site</a></li>
+									<li><a href="#" class="notice">Legal notice</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="panel panel164 margin-top20">
+							<div class="panel-title">
+								Search This Website
+							</div>
+							<div class="search_box">
+								<input type="text" name="" id="">
+							</div>
+							<div class="search_btn">
+								<button type="button"></button>
+							</div>
+						</div>
+	        		</div>
+	        	</div>
+	        	<div class="grid grid-30">
+	        		<div class="calculate_price_box">
+	        			<form method="post" action="">
+							<table width="100%">
+								<thead>
+									<tr class="odd">
+										<td colspan="2" align="left" class="column1">
+											<div align="left">
+												<strong>此价格表适用于中华人民共和国境内的所有交货。有关特殊条款、价格有效期、定价方式、发货地点、税收、其他收费、交货、付款、转售及进口税等的相关规定请参阅我公司交货和付款等各项总则及条款。此价格表中的价格均为净价，不含增值税、关税和其他各项税款。 </strong>
+												<strong>特殊说明： 如果您想了解新钢种H220BD+Z(ULC), WHZ300+Z, WHZ420+Z, HCT600X FE的具体价格，请联系TAGAL 销售部（此处价格计算中显示这些钢种的加价为0） </strong>
+											</div>
+										</td>
+									</tr>
+								</thead>
+								<tfoot>
+									<tr class="odd">
+										<td height="25" class="column1">
+											<div align="left">
+												<p>
+													*
+													说明:
+													<br>
+													OR: 常用标准包装
+													<br>
+													OM: 出口用海运包装
+													<br>
+													OV(OS): 汽车外板包装
+													<br>
+													OG: 等外品等简易包装
+												</p>
+											</div>
+										</td>
+										<td height="25" class="column1">
+											&nbsp;
+										</td>
+									</tr>
+								</tfoot>
+								<tbody>
+
+									<tr class="odd">
+										<th width="79%" class="column1" scope="row">
+											<strong>1.1 热镀锌钢板的有效价格 </strong>
+										</th>
+										<th width="21%" align="center" class="column1" scope="row">
+											<strong> <span id="price1_1">0</span> 元/吨 </strong>
+										</th>
+									</tr>
+									<tr>
+										<th class="column1" scope="row">
+											<select name="baseName" id="basePrice" onchange="setBaseprice()">
+												<option value="0" selected="selected">
+													请选择
+												</option>
+												<option value="5620">
+													基价
+												</option>
+											</select>
+										</th>
+										<td>
+											&nbsp;
+										</td>
+									</tr>
+									
+									<!-- 20140812 2.1 -->
+									<tr class="odd">
+										<th class="column1" scope="row">
+											<strong>2.1 各钢种等级的加/减价 </strong>
+										</th>
+										<th width="21%" align="center" class="column1" scope="row">
+											<strong> <span id="price2_1">0</span> 元/吨 </strong>
+										</th>
+
+									</tr>
+									<!-- 20140812 2.1.X -->
+									<tr class="odd">
+										<th class="column1" scope="row">
+											<strong>2.1.1&nbsp;冲压用钢 </strong>
+										</th>
+										<th width="21%" align="center" class="column1" scope="row">
+											<strong> <span id="price2_1_1">0</span> 元/吨 </strong>
+										</th>
+
+									</tr>
+									
+									<tr>
+										<th class="column1" scope="row">
+											<select name="gradeChg" onchange="item2_1_1Select(this)">
+												<option value="0" selected="selected">
+													请选择
+												</option>
+												
+													<option value="-710">
+														DX51D+Z
+													</option>
+												
+													<option value="300">
+														DX52D+Z
+													</option>
+												
+													<option value="800">
+														DX53D+Z
+													</option>
+												
+													<option value="1350">
+														DX54D+Z
+													</option>
+												
+													<option value="1500">
+														DX56D+Z
+													</option>
+												
+													<option value="2000">
+														DX57D+Z
+													</option>
+												
+											</select>
+										</th>
+										<td>
+											&nbsp;
+										</td>
+									</tr>
+									
+									<tr class="odd">
+										<th class="column1" scope="row">
+											<strong>2.1.2&nbsp;烘烤硬化钢 </strong>
+										</th>
+										<th width="21%" align="center" class="column1" scope="row">
+											<strong> <span id="price2_1_2">0</span> 元/吨 </strong>
+										</th>
+
+									</tr>
+									
+									<tr>
+										<th class="column1" scope="row">
+											<select name="gradeChg" onchange="item2_1_2Select(this)">
+												<option value="0" selected="selected">
+													请选择
+												</option>
+												
+													<option value="1290">
+														H180BD+Z
+													</option>
+												
+													<option value="1300">
+														H220BD+Z
+													</option>
+												
+													<option value="0">
+														H220BD+Z(ULC)
+													</option>
+												
+													<option value="1700">
+														H260BD+Z
+													</option>
+												
+													<option value="1750">
+														H300BD+Z
+													</option>
+												
+											</select>
+										</th>
+										<td>
+											&nbsp;
+										</td>
+									</tr>
+									
+									<tr class="odd">
+										<th class="column1" scope="row">
+											<strong>2.1.3&nbsp;无间隙原子高强度钢 </strong>
+										</th>
+										<th width="21%" align="center" class="column1" scope="row">
+											<strong> <span id="price2_1_3">0</span> 元/吨 </strong>
+										</th>
+
+									</tr>
+									
+									<tr>
+										<th class="column1" scope="row">
+											<select name="gradeChg" onchange="item2_1_3Select(this)">
+												<option value="0" selected="selected">
+													请选择
+												</option>
+												
+													<option value="1220">
+														H180YD+Z
+													</option>
+												
+													<option value="1430">
+														H220YD+Z
+													</option>
+												
+													<option value="1635">
+														H260YD+Z
+													</option>
+												
+											</select>
+										</th>
+										<td>
+											&nbsp;
+										</td>
+									</tr>
+									
+									<tr class="odd">
+										<th class="column1" scope="row">
+											<strong>2.1.4&nbsp;含磷高强度钢 </strong>
+										</th>
+										<th width="21%" align="center" class="column1" scope="row">
+											<strong> <span id="price2_1_4">1015</span> 元/吨 </strong>
+										</th>
+
+									</tr>
+									
+									<tr>
+										<th class="column1" scope="row">
+											<select name="gradeChg" onchange="item2_1_4Select(this)" size="1">
+												<option value="0" selected="selected">
+													请选择
+												</option>
+												
+													<option value="1015">
+														H220PD+Z
+													</option>
+												
+													<option value="1155">
+														H260PD+Z
+													</option>
+												
+													<option value="1240">
+														H300PD+Z
+													</option>
+												
+											</select>
+										</th>
+										<td>
+											&nbsp;
+										</td>
+									</tr>
+									
+									<tr class="odd">
+										<th class="column1" scope="row">
+											<strong>2.1.5&nbsp;低合金高强度钢 </strong>
+										</th>
+										<th width="21%" align="center" class="column1" scope="row">
+											<strong> <span id="price2_1_5">1500</span> 元/吨 </strong>
+										</th>
+
+									</tr>
+									
+									<tr>
+										<th class="column1" scope="row">
+											<select name="gradeChg" onchange="item2_1_5Select(this)" size="1">
+												<option value="0" selected="selected">
+													请选择
+												</option>
+												
+													<option value="1500">
+														H260LAD+Z
+													</option>
+												
+													<option value="1500">
+														H300LAD+Z
+													</option>
+												
+													<option value="1500">
+														H340LAD+Z
+													</option>
+												
+													<option value="1500">
+														H380LAD+Z
+													</option>
+												
+													<option value="1700">
+														H420LAD+Z
+													</option>
+												
+													<option value="1700">
+														H460LAD+Z
+													</option>
+												
+													<option value="1700">
+														H500LAD+Z
+													</option>
+												
+											</select>
+										</th>
+										<td>
+											&nbsp;
+										</td>
+									</tr>
+									
+									<tr class="odd">
+										<th class="column1" scope="row">
+											<strong>2.1.6&nbsp;加工强化高强度钢 </strong>
+										</th>
+										<th width="21%" align="center" class="column1" scope="row">
+											<strong> <span id="price2_1_6">0</span> 元/吨 </strong>
+										</th>
+
+									</tr>
+									
+									<tr>
+										<th class="column1" scope="row">
+											<select name="gradeChg" onchange="item2_1_6Select(this)">
+												<option value="0" selected="selected">
+													请选择
+												</option>
+												
+													<option value="0">
+														WHZ300+Z
+													</option>
+												
+													<option value="0">
+														WHZ420+Z
+													</option>
+												
+											</select>
+										</th>
+										<td>
+											&nbsp;
+										</td>
+									</tr>
+									
+									<tr class="odd">
+										<th class="column1" scope="row">
+											<strong>2.1.7&nbsp;双相高强度钢 </strong>
+										</th>
+										<th width="21%" align="center" class="column1" scope="row">
+											<strong> <span id="price2_1_7">0</span> 元/吨 </strong>
+										</th>
+
+									</tr>
+									
+									<tr>
+										<th class="column1" scope="row">
+											<select name="gradeChg" onchange="item2_1_7Select(this)">
+												<option value="0" selected="selected">
+													请选择
+												</option>
+												
+													<option value="1700">
+														HCT500X
+													</option>
+												
+													<option value="1800">
+														HCT600X
+													</option>
+												
+													<option value="0">
+														HCT600X FE*
+													</option>
+												
+													<option value="1940">
+														HCT780X
+													</option>
+												
+													<option value="2240">
+														HCT980X
+													</option>
+												
+											</select>
+										</th>
+										<td>
+											&nbsp;
+										</td>
+									</tr>
+									
+									<!-- end  2.1.x -->
+									
+									<!-- 2.2 -->
+									<tr class="odd">
+										<th class="column1" scope="row">
+											<strong>2.2 表面处理 </strong>
+										</th>
+										<th class="column1" scope="row">
+											<strong> <span id="price2_2">0</span> 元/吨 </strong>
+										</th>
+									</tr>
+									<tr>
+										<th class="column1" scope="row">
+											<select name="surfaceChg" onchange="item2_2Select(this)">
+												<option value="0" selected="selected">
+													请选择
+												</option>
+												
+													<option value="0">
+														涂油
+													</option>
+												
+													<option value="300">
+														耐指纹
+													</option>
+												
+													<option value="150">
+														TAPP-GI (Z)
+													</option>
+												
+													<option value="150">
+														TAPP-GA (ZF)
+													</option>
+												
+													<option value="100">
+														铬化
+													</option>
+												
+											</select>
+										</th>
+										<td>
+											&nbsp;
+										</td>
+									</tr>
+									
+									
+									<tr>
+										<th colspan="2" class="column1" scope="row">
+											对于耐指纹和铬化处理TAGAL所采用的是无六价铬涂层。
+										</th>
+									</tr>
+									
+									<!-- end 2.2 -->
+									
+									<!-- new 2.3 -->
+									<tr class="odd">
+										<th class="column1" scope="row">
+											<strong>2.3 TABS - 适用新型涂漆工艺的高漆面质量要求 </strong>
+										</th>
+										<th class="column1" scope="row">
+											<strong> <span id="pricen2_3">0</span> 元/吨 </strong>
+										</th>
+									</tr>
+									<tr>
+										<th class="column1" scope="row">
+											<select name="weightChg" onchange="itemn2_3Select(this)">
+												<option value="0" selected="selected">
+													请选择
+												</option>
+												
+													<option value="300">
+														TABS
+													</option>
+												
+											</select>
+										</th>
+										<td>
+											&nbsp;
+										</td>
+									</tr>
+									
+									<!-- 2.4 原 2.3 -->
+									<tr class="odd">
+										<th class="column1" scope="row">
+											<strong>2.4 钢卷重量的加/减价 </strong>
+										</th>
+										<th class="column1" scope="row">
+											<strong> <span id="price2_3">0</span> 元/吨 </strong>
+										</th>
+									</tr>
+									<tr>
+										<th class="column1" scope="row">
+											<select name="weightChg" onchange="item2_3Select(this)">
+												<option value="0" selected="selected">
+													请选择
+												</option>
+												
+													<option value="-100">
+														大于或等于9吨
+													</option>
+												
+											</select>
+										</th>
+										<td>
+											&nbsp;
+										</td>
+									</tr>
+									
+									<tr class="odd">
+										<th class="column1" scope="row">
+											<strong>2.5 涂层和成品加价 </strong>
+										</th>
+										<th class="column1" scope="row">
+											<strong> <span id="price2_4">0</span> 元/吨 </strong>
+										</th>
+									</tr>
+									<tr>
+										<th class="column1" scope="row">
+											<span class="column11"> <select name="coatChg" onchange="item2_4_1Select(this)">
+													<option value="0" selected="selected">
+														请选择
+													</option>
+													
+														<option value="Galvannealed">
+															合金化 (ZF/GA)
+														</option>
+													
+														<option value="Skinpass">
+															光整
+														</option>
+													
+												</select> <select name="coatItemChg" id="coatItem" onchange="item2_4_2Select(this)">
+													<option value="0" selected="selected">
+														请选择
+													</option>
+													
+												</select> </span>
+										</th>
+										<td>
+											&nbsp;
+										</td>
+									</tr>
+									<tr class="odd">
+										<th class="column1" scope="row">
+											<strong>2.6 超标准加价 </strong>
+										</th>
+										<th class="column1" scope="row">
+											<strong> <span id="price2_5">0</span> 元/吨 </strong>
+										</th>
+									</tr>
+									<tr>
+										<th class="column1" scope="row">
+											<select name="stdChg" onchange="item2_5Select(this)">
+												<option value="0" selected="selected">
+													请选择
+												</option>
+
+												
+													<option value="200">
+														平整度上(特殊: &lt;=2毫米) 
+													</option>
+												
+													<option value="0">
+														平整度上(普通: &gt;2毫米, &lt;=9毫米)
+													</option>
+												
+													<option value="200">
+														厚度上
+													</option>
+												
+													<option value="200">
+														宽度上
+													</option>
+												
+											</select>
+										</th>
+										<td>
+											&nbsp;
+										</td>
+									</tr>
+									<tr>
+										<th colspan="2" class="column1" scope="row">
+											超标准参照DIN EN 10143的有关规定
+										</th>
+									</tr>
+									<tr class="odd">
+										<th class="column1" scope="row">
+											<strong>2.7 各锌层厚度的加/减价 </strong>
+										</th>
+										<th class="column1" scope="row">
+											<strong> <span id="price2_6">0</span> 元/吨 </strong>
+										</th>
+									</tr>
+									<tr>
+										<th class="column1" scope="row">
+											<span class="column11"> <select name="26layerChg" onchange="item2_6_1Select(this)" id="thick2_6">
+													<option value="0" selected="selected">
+														请选择
+													</option>
+													
+														<option value="1">
+															T0.40-0.44
+														</option>
+													
+														<option value="2">
+															T0.45-0.49
+														</option>
+													
+														<option value="3">
+															T0.50-0.54
+														</option>
+													
+														<option value="4">
+															T0.55-0.59
+														</option>
+													
+														<option value="5">
+															T0.60-0.69
+														</option>
+													
+														<option value="6">
+															T0.70-0.79
+														</option>
+													
+														<option value="7">
+															T0.80-0.89
+														</option>
+													
+														<option value="8">
+															T0.90-0.99
+														</option>
+													
+														<option value="9">
+															T1.00-1.24
+														</option>
+													
+														<option value="10">
+															T1.25-1.49
+														</option>
+													
+														<option value="11">
+															T1.5-1,74
+														</option>
+													
+														<option value="12">
+															T1.75-1.79
+														</option>
+													
+														<option value="13">
+															T1.8-1.99
+														</option>
+													
+														<option value="14">
+															T2.0-2.29
+														</option>
+													
+														<option value="15">
+															T2.3-3.0
+														</option>
+													
+
+												</select> <select name="26thicknessChg" onchange="item2_6_2Select(this)" id="layer">
+													<option value="0" selected="selected">
+														请选择
+													</option>
+													
+														<option value="1">
+															60-119
+														</option>
+													
+														<option value="2">
+															120-139
+														</option>
+													
+														<option value="3">
+															140-159
+														</option>
+													
+														<option value="4">
+															160-179
+														</option>
+													
+														<option value="5">
+															180-199
+														</option>
+													
+														<option value="6">
+															200-219
+														</option>
+													
+														<option value="7">
+															220-279
+														</option>
+													
+												</select> </span>
+										</th>
+										<td>
+											&nbsp;
+										</td>
+									</tr>
+									<tr>
+										<th colspan="2" class="column1" scope="row">
+											对于两面锌层差厚的产品，将按两面的厚度总和计算。总锌层厚度的具体收费将由双方共同协定。
+										</th>
+									</tr>
+									<tr class="odd">
+										<th class="column1" scope="row">
+											<strong>2.8 各厚度和宽度的加/减价 </strong>
+										</th>
+										<th class="column1" scope="row">
+											<strong> <span id="price2_7">0</span> 元/吨 </strong>
+										</th>
+									</tr>
+									<tr>
+										<th class="column1" scope="row">
+											<span class="column11"> <select name="27thicknessChg" id="thick" onchange="item2_7_1Select(this)">
+													<option value="0" selected="selected">
+														请选择
+													</option>
+													
+														<option value="1">
+															T0.40-0.44
+														</option>
+													
+														<option value="2">
+															T0.45-0.49
+														</option>
+													
+														<option value="3">
+															T0.50-0.54
+														</option>
+													
+														<option value="4">
+															T0.55-0.59
+														</option>
+													
+														<option value="5">
+															T0.60-0.69
+														</option>
+													
+														<option value="6">
+															T0.70-0.79
+														</option>
+													
+														<option value="7">
+															T0.80-0.89
+														</option>
+													
+														<option value="8">
+															T0.90-0.99
+														</option>
+													
+														<option value="9">
+															T1.00-1.24
+														</option>
+													
+														<option value="10">
+															T1.25-1.49
+														</option>
+													
+														<option value="11">
+															T1.5-1,74
+														</option>
+													
+														<option value="12">
+															T1.75-1.79
+														</option>
+													
+														<option value="13">
+															T1.8-1.99
+														</option>
+													
+														<option value="14">
+															T2.0-2.29
+														</option>
+													
+														<option value="15">
+															T2.3-3.0
+														</option>
+													
+												</select> <select name="27widthChg" id="width" onchange="item2_7_2Select(this)">
+													<option value="0" selected="selected">
+														请选择
+													</option>
+													
+														<option value="1">
+															500-799
+														</option>
+													
+														<option value="2">
+															800-999
+														</option>
+													
+														<option value="3">
+															1000-1199
+														</option>
+													
+														<option value="4">
+															1200-1499
+														</option>
+													
+														<option value="5">
+															1500-1699
+														</option>
+													
+														<option value="6">
+															1700-1880
+														</option>
+													
+												</select> </span>
+										</th>
+										<td>
+											&nbsp;
+										</td>
+									</tr>
+									<tr>
+										<th colspan="2" class="column1" scope="row">
+											窄于上述尺寸的宽度将按具体要求供货。
+										</th>
+									</tr>
+									<tr class="odd">
+										<th class="column1" scope="row">
+											<strong>2.9 每一合同项的最小订货量和最小供货量 </strong>
+										</th>
+										<th class="column1" scope="row">
+											<strong> <span id="price2_8">0</span> 元/吨 </strong>
+										</th>
+									</tr>
+									<tr>
+										<th class="column1" scope="row">
+											<select name="weightBase" onchange="item2_8Select(this)">
+												<option value="0" selected="selected">
+													请选择
+												</option>
+												
+													<option value="200">
+														大于等于5吨小于10吨 
+													</option>
+												
+													<option value="150">
+														大于等于10吨小于15吨
+													</option>
+												
+													<option value="100">
+														大于等于15吨小于20吨
+													</option>
+												
+											</select>
+										</th>
+										<td>
+											&nbsp;
+										</td>
+									</tr>
+									<tr>
+										<th colspan="2" class="column1" scope="row">
+											一个合同项是指一个定单内同一钢种、同一规格、同一目的地、同一笔交货的1a等级产品。
+										</th>
+									</tr>
+									<tr class="odd">
+										<th class="column1" scope="row">
+											<strong>3.1 包装类型 </strong>
+										</th>
+										<th class="column1" scope="row">
+											<strong> <span id="price3_1">0</span> 元/吨 </strong>
+										</th>
+									</tr>
+									<tr>
+										<th class="column1" scope="row">
+											<span class="column11"> <select name="packChg" onchange="item3_1Select(this)">
+													<option value="0" selected="selected">
+														请选择
+													</option>
+													
+														<option value="-30">
+															OG
+														</option>
+													
+														<option value="30">
+															OM
+														</option>
+													
+														<option value="0">
+															OR
+														</option>
+													
+														<option value="50">
+															OV(O5)
+														</option>
+													
+												</select> </span>
+										</th>
+										<td>
+											&nbsp;
+										</td>
+									</tr>
+									<tr class="odd">
+										<th class="column1" scope="row" colspan="2">
+											<strong>4.1 允许调整发货量 </strong>
+										</th>
+
+									</tr>
+									<tr>
+										<th class="column1" scope="row">
+											我公司有权按下列方式调整每一合同项的实际发货量：
+										</th>
+										<td>
+											&nbsp;
+										</td>
+									</tr>
+									<tr>
+										<th class="column1" scope="row">
+											o
+											a) 订货量低于或等于100吨 = 20%
+										</th>
+										<td>
+											&nbsp;
+										</td>
+									</tr>
+									<tr>
+										<th class="column1" scope="row">
+											合计
+										</th>
+										<th class="column1" scope="row">
+											<strong> <span id="total">0</span> 元/吨 </strong>
+										</th>
+									</tr>
+								</tbody>
+							</table>
+						</form>
+	        		</div>
+	        	</div>
+	        	<div class="grid grid-9">
+
+	        		<div class="panel panel170">
+						<a class="panel-title" href="#">
+							Caculation<span class="sword">&gt;&gt;</span>
+						</a>
+						<div class="panelcontentbox content-text">
+	                        According to your selection the price of TAGAL produce will be calculated instantan-eously.
+						</div>
+					</div>
+					<div class="panel panel170 margin-top20">
+						<a class="panel-title" href="#">
+							E-business<span class="sword">&gt;&gt;</span>
+						</a>
+						<div class="panelcontentbox content-text">
+	                        Real-time inquiry of order st-atus
+						</div>
+					</div>
+					<div class="panel panel170 margin-top20">
+						<a class="panel-title" href="#">
+							Vacancy<span class="sword">&gt;&gt;</span>
+						</a>
+						<div class="panelcontentbox content-text">
+	                        Looking for a challenging car-eer that will help you realize your dreams, and then TAGALis your preferred choice.
+						</div>
+					</div>
+					<div class="panel panel170 margin-top20">
+						<a class="panel-title" href="#">
+							Corporate Culture<span class="sword">&gt;&gt;</span>
+						</a>
+						<div class="panelcontentbox content-text">
+	                        Technology,Accurancy,Goal,Achievement,LOHAS
+						</div>
+					</div>
+
+	        	</div>
+	        </div>
+
+
+			<div class="clear"></div>
+			<div class="footer">
+			    <div class="brand"></div>
+			    <div class="footer-info">
+					<div class="footer-info-link">
+						<a href="#">Home</a> | <a href="#">Concat</a> | <a href="#">Publications</a> | <a href="#">Glossary</a> | <a href="#">Sitemap</a> | <a href="#">Search</a> | <a href="#">中文</a>
+					</div>
+					<div class="footer-info-icp">
+						Copyright ©1996-2014 SINA Corporation, All Rights Reserved | <a href="#">Imprint/Disclaimer</a>
+					</div>
+			    </div>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
