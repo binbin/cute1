@@ -225,7 +225,8 @@ $content-width:960px;
        padding-left:23px;
        color:rgb(16,56,126);
        text-decoration: none; 
-       @include inline-block;
+       /*@include inline-block;*/
+       display:block;
      }
      a:hover{
         text-decoration: underline;
