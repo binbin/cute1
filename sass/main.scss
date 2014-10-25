@@ -1036,6 +1036,7 @@ $content-width:960px;
         z-index:999;
         background:#fff;
         padding-bottom:20px;
+        width:750px;
         li{
            @include inline-block;
            padding-right:5px;
@@ -1053,14 +1054,14 @@ $content-width:960px;
               top:5px;
               bottom:4px;
              }
-             width: 54px;
+             width: 50px;
              @include inline-block;
            }
            a.highlight{
              color:rgb(255,229,126);
              border-bottom:3px solid rgb(255,229,126);
              text-align:center;
-             width: 60px;
+             width: 55px;
            }
         }
       }
