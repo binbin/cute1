@@ -1036,6 +1036,10 @@ $content-width:960px;
         z-index:999;
         background:#fff;
         padding-bottom:20px;
+<<<<<<< HEAD
+=======
+        width:750px;
+>>>>>>> master
         li{
            @include inline-block;
            padding-right:5px;
@@ -1053,14 +1057,22 @@ $content-width:960px;
               top:5px;
               bottom:4px;
              }
+<<<<<<< HEAD
              width: 54px;
+=======
+             width: 50px;
+>>>>>>> master
              @include inline-block;
            }
            a.highlight{
              color:rgb(255,229,126);
              border-bottom:3px solid rgb(255,229,126);
              text-align:center;
+<<<<<<< HEAD
              width: 60px;
+=======
+             width: 55px;
+>>>>>>> master
            }
         }
       }
