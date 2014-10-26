@@ -217,16 +217,16 @@ $content-width:960px;
   }
   li{
      padding:{
-       top:5px;
-       bottom:5px;
+       /*top:5px;
+       bottom:5px;*/
      }
      a{
-       background:url("../images/bg-linklistitem.png") no-repeat scroll 0 0 transparent;
        padding-left:23px;
        color:rgb(16,56,126);
        text-decoration: none; 
        /*@include inline-block;*/
        display:block;
+       line-height:18px;
      }
      a:hover{
         text-decoration: underline;
@@ -248,8 +248,8 @@ $content-width:960px;
       li{
 
         padding:{
-         top:5px;
-         bottom:0px;
+         /*top:5px;
+         bottom:0px;*/
         }
       }
       li a{
@@ -257,17 +257,6 @@ $content-width:960px;
          background:none;
        }
      }
-     .bookmark{background:url("../images/icon-bookmark_12.png") no-repeat scroll 0 0 transparent;}
-     .eye{background:url("../images/icon-eye_12.png") no-repeat scroll 0 0 transparent;}
-     .globe{background:url("../images/icon-globe_12.png") no-repeat scroll 0 0 transparent;} 
-     .heart{background:url("../images/icon-heart_12.png") no-repeat scroll 0 0 transparent;} 
-     .list{background:url("../images/icon-list_12.png") no-repeat scroll 0 0 transparent;} 
-     .terminal{background:url("../images/icon-terminal_12.png") no-repeat scroll 0 0 transparent;} 
-     .trolley{background:url("../images/icon-trolley_12.png") no-repeat scroll 0 0 transparent;}
-     .career{background:url("../images/icon-career_12.png") no-repeat scroll 0 0 transparent;}
-     .investor{background:url("../images/icon-investor_12.png") no-repeat scroll 0 0 transparent;}
-     .notice{background:url("../images/icon-notice_12.png") no-repeat scroll 0 0 transparent;}
-     .tagal{background:url("../images/icon-tagal_12.png") no-repeat scroll 0 0 transparent;}
    }
   .search_box{
       padding-right:10px;
