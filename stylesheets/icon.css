@@ -1,13 +1,12 @@
 .panel li  a{
 	background-position-x: 0px;
 	background-position-y: 50%;
-	background-size: initial;
-	background-repeat-x: no-repeat;
-	background-repeat-y: no-repeat;
+	background-repeat: no-repeat;
+	background-color: transparent;
 	background-attachment: scroll;
+	background-size: initial;
 	background-origin: initial;
 	background-clip: initial;
-	background-color: transparent;
 }
 a.linkTo{background-image: url("../images/bg-linklistitem.png");}
 a.bookmark{background-image:url("../images/icon-bookmark_12.png");}
