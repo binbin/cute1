@@ -1,6 +1,5 @@
 .panel li  a{
-	background-position-x: 0px;
-	background-position-y: 50%;
+	background-position:0 50%;
 	background-repeat: no-repeat;
 	background-color: transparent;
 	background-attachment: scroll;
