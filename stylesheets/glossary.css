@@ -1,0 +1,9 @@
+table{border-spacing: 1px;border-collapse: separate;}
+table td{font-weight:bold;}
+.maintitle{background-color:#317cc0; color:white; font-weight:bold;}
+.title{background-color:#9bb8d8; font-weight:bold;}
+.rowtitle{background-color:#cedbec; font-weight:bold;}
+.coltitle{background-color:#bdcde9; font-weight:bold;}
+.bge6{background-color:#e6e6e6;}
+.style7 {font-family: Arial, Helvetica, sans-serif; font-size: 12px; padding-left:4px; }
+p.style7{line-height: 20px;}
