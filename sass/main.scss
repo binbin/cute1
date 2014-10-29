@@ -800,7 +800,7 @@ $content-width:960px;
   }
   .ad7{
     padding:{
-      top:50px;
+      top:60px;
       left:5px;
       bottom:20px;
     }
@@ -1025,6 +1025,7 @@ $content-width:960px;
         z-index:999;
         background:#fff;
         padding-bottom:20px;
+        padding-left:20px;
         li{
            @include inline-block;
            padding-right:5px;
