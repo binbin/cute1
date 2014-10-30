@@ -73,10 +73,6 @@
           /*bottom:1px;*/
         }
      }
-     li a{
-         padding-left: 0px;
-         background:none;
-     }
      a{
        padding-left:23px;
        color:rgb(16,56,126);
@@ -90,6 +86,18 @@
      }
      a.current{
         color:rgb(244,182,19);
+     }
+     li{
+       a{
+         padding-left: 0px;
+         background:none;
+       }
+       a,a.current,a:hover{
+          color:rgb(143,139,149);
+       }
+       a.current,a:hover{
+         text-decoration: underline;
+       }
      }
      span{
       cursor:pointer;
