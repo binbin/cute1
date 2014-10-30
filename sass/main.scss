@@ -166,7 +166,7 @@ $content-width:960px;
 .panel{
   padding-top:6px;
   .panel-title{
-     @include inline-block;
+     /*@include inline-block;*/
      color:#000;
      /*有可能是链接*/
      text-decoration: none;
