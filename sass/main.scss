@@ -45,7 +45,7 @@ font-weight: bold;
 html,body{
 	font-size:12px;
   /*font-family: cursive;*/
-  font-family: Arial;
+  font-family: "Microsoft YaHei","Arial","微软雅黑","SimHei","黑体";
 	background-color:rgb(192,192,192);
   height:100%;
 }
@@ -791,6 +791,11 @@ $content-width:960px;
   .ad5{
      width:450px;
      .artical_listbox li a{width:340px;}
+     a{
+        white-space:nowrap; 
+        overflow:hidden; 
+        text-overflow:ellipsis;
+     }
   }
   .ad6{
     padding:{
@@ -1238,6 +1243,7 @@ $content-width:960px;
       padding:{
         bottom:10px;
       }
+      width:750px;
    }
    div.brand{
      float:right;
