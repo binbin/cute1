@@ -1,0 +1,99 @@
+@charset "utf-8";
+@import "compass/css3";
+@import "compass/typography/links/unstyled-link";
+
+
+.panel_menu{
+  padding-top:6px;
+  .panelcontentbox{
+     
+     /*@include border-radius(3px);*/
+     padding:{
+      /*top:5px;
+      bottom:5px;
+      left:8px;
+      right: 8px;*/
+     }
+     .border_top_fix{
+        border:{
+          left:1px solid rgb(233,233,233);
+          right:1px solid rgb(233,233,233);
+          top:1px solid rgb(233,233,233);
+        }
+        height:5px;
+        @include border-corner-radius(top, left, 5px);
+        @include border-corner-radius(top, right, 5px);
+        background:rgb(245,245,245);
+     }
+     .border_bottom_fix{
+        border:{
+          left:1px solid rgb(233,233,233);
+          right:1px solid rgb(233,233,233);
+          bottom:1px solid rgb(233,233,233);
+        }
+        height:5px;
+        @include border-corner-radius(bottom, left, 5px);
+        @include border-corner-radius(bottom, right, 5px);
+        background:rgb(245,245,245);
+     }
+  }
+  li{
+     span.menu_item{
+        background:rgb(245,245,245);
+        padding:{
+          left:8px;
+          right: 8px;
+        }
+        border:{
+         left:1px solid rgb(233,233,233);
+         right:1px solid rgb(233,233,233);
+        }
+     }
+     div.item_border_bottom_fix{
+       height:1px;
+       border-bottom:1px solid rgb(233,233,233);
+       display:none;
+     }
+     span.open{
+        div.item_border_bottom_fix{
+          display: block;
+        }
+        span.menu_item{
+           border-bottom:1px solid rgb(233,233,233);
+        } 
+        ul{display: block;}
+     }
+     ul{
+        background:rgb(231,241,207);
+        padding-left:23px + 8px;
+        display:none;
+        border:1px solid rgb(233,233,233);
+        margin:{
+          top:1px;
+          /*bottom:1px;*/
+        }
+     }
+     li a{
+         padding-left: 0px;
+         background:none;
+     }
+     a{
+       padding-left:23px;
+       color:rgb(16,56,126);
+       text-decoration: none; 
+       @include inline-block;
+       line-height:24px;
+     }
+     a:hover{
+        text-decoration: underline;
+        color:rgb(244,182,19);
+     }
+     a.current{
+        color:rgb(244,182,19);
+     }
+     span{
+      cursor:pointer;
+      display: block;
+     }
+   }
+}
