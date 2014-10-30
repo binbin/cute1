@@ -716,8 +716,8 @@ $content-width:960px;
           width:400px;
           position:absolute;
           @include border-radius(5px);
-          right:0px;
-          bottom:25px;
+          right:20px;
+          bottom:20px;
           @include inline-block;
           background:url(../images/bg-trans.png) repeat transparent;
           /*以下为IE6设置PNG透明代码*/
