@@ -146,6 +146,7 @@ $content-width:960px;
 }
 .margin-top10{
   margin-top:10px;
+  *margin-top:20px;
 }
 .margin-top20{
   margin-top:20px;
@@ -307,15 +308,34 @@ $content-width:960px;
   width:208px;
 }
 .newsbox{
+  padding:{
+    bottom:8px;
+  }
   .newsbox-title{
      font-size:15px;
      font-weight:bold;
      /*padding-left:7px;*/
      padding:{
       /*top:10px;*/
+      /*bottom:5px + 6px;*/
       bottom:5px;
      }
-     border-bottom:1px solid rgb(195,195,195);
+     /*border-bottom:1px solid rgb(195,195,195);*/
+    
+     /*background-position:0 bottom;
+     background-repeat: no-repeat;
+
+     background-image:url("../images/bg-panel208.png");  
+     -moz-background-size: 100% 6px;  
+     -o-background-size: 100% 6px;  
+     -webkit-background-size: 100% 6px;  
+     background-size: 100% 6px;  
+     -moz-border-image: url("../images/bg-panel208.png") 0;  
+     background-repeat:no-repeat\9;  
+     background-image:none\9;  
+     filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/bg-panel208.png', sizingMethod='scale')\9;  
+     */
+
      .more{
         @include inline-block;
         float:right;
@@ -348,6 +368,9 @@ $content-width:960px;
          @include inline-block;
          color:rgb(16,56,126);
          text-decoration: none; 
+         white-space:nowrap; 
+         overflow:hidden; 
+         text-overflow:ellipsis;
        }
        a:hover{
           text-decoration: underline;
@@ -791,11 +814,6 @@ $content-width:960px;
   .ad5{
      width:450px;
      .artical_listbox li a{width:340px;}
-     a{
-        white-space:nowrap; 
-        overflow:hidden; 
-        text-overflow:ellipsis;
-     }
   }
   .ad6{
     padding:{
@@ -826,6 +844,15 @@ $content-width:960px;
       left:5px;
       bottom:20px;
     }
+  }
+  .ad8{
+     .sub_page_imgbox{
+       padding:{
+        top:9px;
+        bottom:20px;
+       }
+     }
+     .artical_listbox li a{width:600px;}
   }
   .sub_page_imgbox{
     img{/*width:580px;*/width:100%;height:auto;}
