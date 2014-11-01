@@ -13,7 +13,7 @@
         
 .pagination a {
     text-decoration: none;
-	/*border: solid 1px #AAE;*/
+	*border: solid 1px #AAE;
 	color: rgb(18,57,107);
 	background:rgb(250,250,250);
 	@include box-shadow(#999 1px 1px 8px);
@@ -34,6 +34,7 @@
     background: rgb(181,214,104);
     color: #fff;
     @include box-shadow(#999 1px 1px 8px);
+    *border: solid 1px #AAE;
 }
 
 .pagination .current.prev, .pagination .current.next{
