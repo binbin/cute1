@@ -1,0 +1,46 @@
+@charset "utf-8";
+@import "compass/css3";
+
+.page{
+    float: left; 
+    position: relative;
+    left: 50%; 
+}
+.pagination {
+              position: relative;
+              left: -50%; 
+        }
+        
+.pagination a {
+    text-decoration: none;
+	/*border: solid 1px #AAE;*/
+	color: rgb(18,57,107);
+	background:rgb(250,250,250);
+	@include box-shadow(#999 1px 1px 8px);
+}
+
+.pagination a, .pagination span {
+    display: block;
+    float: left;
+    padding: 0.6em 1em;
+    margin-right: 10px;
+	margin-bottom: 10px;
+	min-width:1em;
+	text-align:center;
+	font-size: 10px;
+}
+
+.pagination .current {
+    background: rgb(181,214,104);
+    color: #fff;
+    @include box-shadow(#999 1px 1px 8px);
+}
+
+.pagination .current.prev, .pagination .current.next{
+	color:#999;
+	border-color:#999;
+	background:#fff;
+}
+.pagination a{
+	
+}
