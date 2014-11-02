@@ -14,4 +14,28 @@ $(function(){
        	 })
        }
 	})
+       $('ul.list > li li').each(function(){
+              $(this).hover(function(){
+                 $(this).addClass('current')
+                 $(this).siblings().removeClass('current')
+              },function(){
+                 $(this).removeClass('current')
+              })
+       })
+       $('ul.list > li ul').mouseleave(function(){
+
+       })
+       $('ul.list > li ul').each(function(){
+              var ul=$(this),current
+              ul.children().each(function(){
+                     if($(this).hasClass('current')){
+                          current = $(this)  
+                     }
+              })
+              if(current){
+                     ul.mouseleave(function(){
+                            current.addClass('current')
+                     })
+              }
+       })
 })

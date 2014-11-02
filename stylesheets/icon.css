@@ -1,4 +1,4 @@
-.panel li  a,.panel_menu li  a{
+.panel li  a{
 	background-position:0 50%;
 	background-repeat: no-repeat;
 	background-color: transparent;
@@ -20,3 +20,7 @@ a.investor{background-image:url("../images/icon-investor_12.png");}
 a.notice{background-image:url("../images/icon-notice_12.png");}
 a.tagal{background-image:url("../images/icon-tagal_12.png");}
 a.business_commerce{background-image:url("../icon/business_commerce.png");}
+
+a.production-process{background-image:url("../icon/production-process.png");}
+a.quality-assurance{background-image:url("../icon/quality-assurance.png");}
+a.technical-highlight{background-image:url("../icon/technical-highlight.png");}
