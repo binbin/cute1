@@ -18,7 +18,7 @@
 	text-align:center;
 }
 
-.pagination .current {
+.pagination .current{
     background: #26B;
     color: #fff;
 	border: solid 1px #AAE;
